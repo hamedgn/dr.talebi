@@ -120,5 +120,23 @@ namespace dr
 
             File.WriteAllText("temp","");
         }
+
+        private void pr_cod_box_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(pr_cod_box.Text, "[^0-9]"))
+            {
+                
+                pr_cod_box.Text = pr_cod_box.Text.Remove(pr_cod_box.Text.Length - 1);
+            }
+        }
+
+        private void passcod_box_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(passcod_box.Text, "[^0-9]"))
+            {
+
+                passcod_box.Text = passcod_box.Text.Remove(passcod_box.Text.Length - 1);
+            }
+        }
     }
 }

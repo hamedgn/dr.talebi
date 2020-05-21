@@ -39,16 +39,16 @@
             this.enter_btn = new System.Windows.Forms.Button();
             this.timer_date_time = new System.Windows.Forms.Timer(this.components);
             this.choose_dp_combo = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.timer_dep_list = new System.Windows.Forms.Timer(this.components);
             this.choose_machin_combo = new System.Windows.Forms.ComboBox();
             this.timer_get_machine = new System.Windows.Forms.Timer(this.components);
+            this.choose_machine_lb = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // pr_cod_lb
             // 
             this.pr_cod_lb.AutoSize = true;
-            this.pr_cod_lb.Location = new System.Drawing.Point(328, 32);
+            this.pr_cod_lb.Location = new System.Drawing.Point(351, 32);
             this.pr_cod_lb.Name = "pr_cod_lb";
             this.pr_cod_lb.Size = new System.Drawing.Size(57, 13);
             this.pr_cod_lb.TabIndex = 0;
@@ -58,7 +58,7 @@
             // passcod_lb
             // 
             this.passcod_lb.AutoSize = true;
-            this.passcod_lb.Location = new System.Drawing.Point(328, 67);
+            this.passcod_lb.Location = new System.Drawing.Point(351, 67);
             this.passcod_lb.Name = "passcod_lb";
             this.passcod_lb.Size = new System.Drawing.Size(47, 13);
             this.passcod_lb.TabIndex = 1;
@@ -67,26 +67,29 @@
             // 
             // pr_cod_box
             // 
-            this.pr_cod_box.Location = new System.Drawing.Point(202, 29);
+            this.pr_cod_box.Location = new System.Drawing.Point(225, 29);
             this.pr_cod_box.Name = "pr_cod_box";
             this.pr_cod_box.Size = new System.Drawing.Size(120, 20);
             this.pr_cod_box.TabIndex = 2;
+            this.pr_cod_box.TextChanged += new System.EventHandler(this.pr_cod_box_TextChanged);
             // 
             // passcod_box
             // 
-            this.passcod_box.Location = new System.Drawing.Point(202, 67);
+            this.passcod_box.Location = new System.Drawing.Point(225, 67);
             this.passcod_box.Name = "passcod_box";
             this.passcod_box.Size = new System.Drawing.Size(120, 20);
             this.passcod_box.TabIndex = 3;
+            this.passcod_box.UseSystemPasswordChar = true;
+            this.passcod_box.TextChanged += new System.EventHandler(this.passcod_box_TextChanged);
             // 
             // choose_dp_lb
             // 
             this.choose_dp_lb.AutoSize = true;
-            this.choose_dp_lb.Location = new System.Drawing.Point(331, 104);
+            this.choose_dp_lb.Location = new System.Drawing.Point(347, 108);
             this.choose_dp_lb.Name = "choose_dp_lb";
-            this.choose_dp_lb.Size = new System.Drawing.Size(60, 13);
+            this.choose_dp_lb.Size = new System.Drawing.Size(63, 13);
             this.choose_dp_lb.TabIndex = 4;
-            this.choose_dp_lb.Text = "انتخاب بخش";
+            this.choose_dp_lb.Text = ":انتخاب بخش";
             // 
             // date_lb
             // 
@@ -108,7 +111,7 @@
             // 
             // enter_btn
             // 
-            this.enter_btn.Location = new System.Drawing.Point(247, 147);
+            this.enter_btn.Location = new System.Drawing.Point(270, 147);
             this.enter_btn.Name = "enter_btn";
             this.enter_btn.Size = new System.Drawing.Size(75, 23);
             this.enter_btn.TabIndex = 8;
@@ -128,21 +131,11 @@
             this.choose_dp_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.choose_dp_combo.Enabled = false;
             this.choose_dp_combo.FormattingEnabled = true;
-            this.choose_dp_combo.Location = new System.Drawing.Point(201, 104);
+            this.choose_dp_combo.Location = new System.Drawing.Point(224, 104);
             this.choose_dp_combo.Name = "choose_dp_combo";
             this.choose_dp_combo.Size = new System.Drawing.Size(121, 21);
             this.choose_dp_combo.TabIndex = 9;
             this.choose_dp_combo.SelectedIndexChanged += new System.EventHandler(this.choose_dp_combo_SelectedIndexChanged);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(166, 104);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(29, 23);
-            this.button1.TabIndex = 10;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // timer_dep_list
             // 
@@ -154,7 +147,7 @@
             // 
             this.choose_machin_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.choose_machin_combo.FormattingEnabled = true;
-            this.choose_machin_combo.Location = new System.Drawing.Point(39, 104);
+            this.choose_machin_combo.Location = new System.Drawing.Point(12, 104);
             this.choose_machin_combo.Name = "choose_machin_combo";
             this.choose_machin_combo.Size = new System.Drawing.Size(121, 21);
             this.choose_machin_combo.TabIndex = 11;
@@ -164,13 +157,22 @@
             this.timer_get_machine.Interval = 1000;
             this.timer_get_machine.Tick += new System.EventHandler(this.timer_get_machine_Tick);
             // 
+            // choose_machine_lb
+            // 
+            this.choose_machine_lb.AutoSize = true;
+            this.choose_machine_lb.Location = new System.Drawing.Point(135, 108);
+            this.choose_machine_lb.Name = "choose_machine_lb";
+            this.choose_machine_lb.Size = new System.Drawing.Size(78, 13);
+            this.choose_machine_lb.TabIndex = 12;
+            this.choose_machine_lb.Text = ":انتخاب دستگاه";
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(397, 180);
+            this.ClientSize = new System.Drawing.Size(422, 180);
+            this.Controls.Add(this.choose_machine_lb);
             this.Controls.Add(this.choose_machin_combo);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.choose_dp_combo);
             this.Controls.Add(this.enter_btn);
             this.Controls.Add(this.time_lb);
@@ -199,10 +201,10 @@
         private System.Windows.Forms.Button enter_btn;
         private System.Windows.Forms.Timer timer_date_time;
         private System.Windows.Forms.ComboBox choose_dp_combo;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer timer_dep_list;
         private System.Windows.Forms.ComboBox choose_machin_combo;
         private System.Windows.Forms.Timer timer_get_machine;
+        private System.Windows.Forms.Label choose_machine_lb;
     }
 }
 

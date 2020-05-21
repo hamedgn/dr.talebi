@@ -29,21 +29,25 @@ namespace dr
         {
 
             // Creating object of ExThread class 
-            
 
+           // Db.check_user_pass();
+           // label1.Text = Db.id;
+            //label2.Text = Db.user;
             // Creating thread 
             // Using thread class 
-            Thread thr = new Thread(new ThreadStart(Db.lists));
+            Thread thr = new Thread(new ThreadStart(this.chlb));
             thr.Start();
            // Db.lists();
             
-           
+          
             
         }
+        
         public void chlb()
         {
-            label1.Text = Db.id;
-            label2.Text = Db.user;
+           // Db.lists();
+            //label1.Text = Db.id;
+            //label2.Text = Db.user;
         }
     }
 }

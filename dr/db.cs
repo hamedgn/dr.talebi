@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Security.Cryptography.X509Certificates;
 using System.Text;
@@ -15,19 +16,27 @@ namespace dr
 
     class db
     {
-        private Form1 fg;
+      
         private MySqlConnection connection;
-        private string server;
+        public string server;
         private string database;
         private string uid;
         private string password;
-        public string id;
-        public string user;
+        
+        public string message;
+        
 
         public db()
         {
             Initialize();
-            fg = new Form1();
+            if (File.Exists("temp"))
+            {
+
+            }
+            else
+            {
+                File.Create("temp");
+            }
         }
 
        
@@ -135,11 +144,38 @@ namespace dr
             
         }
 
-        public void lists()
+        public void check_user_pass(string pr_cod ,string pass)
         {
            
 
-            string query = "CALL `all user`()";
+            string query = "CALL `check user`("+pr_cod+","+pass+")";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                //check pass with user
+                message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+          
+            
+        }
+
+        public void count_departman()
+        {
+            string query = "CALL `count departeman`()";
 
             if (this.OpenConnection() == true)
             {
@@ -151,8 +187,8 @@ namespace dr
 
 
                     //check pass with user
-                   id =  myreader["id"].ToString();
-                   user = myreader["pr_cod"].ToString();
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
 
 
                 //close connection
@@ -160,7 +196,135 @@ namespace dr
 
 
             }
-            fg.chlb();
+
+        }
+        public void name_departman(int id_dep)
+        {
+            string query = "CALL `departman name`("+id_dep+")";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+        public void id_departman(string name_dep)
+        {
+            string query = "CALL `departman id`('" + name_dep + "')";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+        public void name_machine(int id_machine)
+        {
+            string query = "CALL `machine name`(" + id_machine + ")";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+        IList<int> machine_list = new List<int>();
+        public void sync_departman(int id_dep)
+        {
+            string query = "CALL `syncdepmach1`(" + id_dep + ")";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+                {
+                    //check pass with user
+                   // message = myreader["machin_id"].ToString();
+                    machine_list.Add(Convert.ToInt32(myreader["machin_id"].ToString()));
+                    // user = myreader["pr_cod"].ToString();
+                    /*		object.ToString returned	"2"	string
+
+                    for (int i = 0; i <Convert.ToInt32(message); i++)
+                    {
+                        machine_list.Add(Convert.ToInt32(myreader[i].ToString()));
+                    }
+                    */
+                }
+                    
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+       
+        public void sync_dep_mach_name()
+        {
+            int j = machine_list.Count;
+            for (int i = 0; i < j; i++)
+            {
+                
+                name_machine(machine_list[i]);
+                string temp = "";
+                temp = File.ReadAllText("temp");
+
+                File.WriteAllText("temp",temp  + message + "%");
+                
+            }
+            
+            for (int i = 0; i < j; i++)
+            {
+                machine_list.RemoveAt(0);
+            }
         }
     }
 

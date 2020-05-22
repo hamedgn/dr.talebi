@@ -31,7 +31,7 @@ namespace dr
         string persiandate(DateTime dateTime1)
         {
             PersianCalendar persianCalendar1 = new PersianCalendar();
-            return string.Format(@"{0}/{1}/{2}",
+            return string.Format(@"{0}-{1}-{2}",
                  persianCalendar1.GetYear(dateTime1),
                  persianCalendar1.GetMonth(dateTime1),
                  persianCalendar1.GetDayOfMonth(dateTime1));
@@ -54,18 +54,42 @@ namespace dr
         private void enter_btn_Click(object sender, EventArgs e)
         {
             DBC.check_user_pass(pr_cod_box.Text, passcod_box.Text);
-            MessageBox.Show(DBC.message);
-            /*
-            if (DBC.message == "wrong user or pass")
+            if (DBC.message== "successfuly")
             {
-                MessageBox.Show("دوباره تلاش کن");
+                DBC.check_user_permission(pr_cod_box.Text);
+                DBC.lastlogin(Convert.ToInt32(pr_cod_box.Text), date_lb.Text + " " + time_lb.Text);
+                
+                MessageBox.Show("با موفقیت وارد شدید");
+                if (DBC.permission == "0")
+                {
+                    MessageBox.Show("none");
+                }
+                else if (DBC.permission == "-1")
+                {
+                    MessageBox.Show("wrong user pass");
+                }
+                else if (DBC.permission == "1")
+                {
+                    MessageBox.Show("normal user");
+                }
+                else if (DBC.permission == "999")
+                {
+                    MessageBox.Show("admin");
+                }
+                timer_dep_list.Enabled = true;
+                choose_machin_combo.Enabled = true;
+                enter_btn.Enabled = false;
+                pr_cod_box.Enabled = false;
+                passcod_box.Enabled = false;
+                login_to_test.Enabled = true;
             }
             else
             {
-                MessageBox.Show("try again");
+                MessageBox.Show("نام کاربری یا کلمه عبور اشتباه است");
             }
-            */
-            Console.WriteLine(DBC.message);
+            
+            
+            
         }
         
         private void timer1_Tick(object sender, EventArgs e)
@@ -86,10 +110,7 @@ namespace dr
             timer_get_machine.Enabled = true;
         }
         private int count_departemant;
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
+       
 
         private void timer_dep_list_Tick(object sender, EventArgs e)
         {
@@ -137,6 +158,41 @@ namespace dr
 
                 passcod_box.Text = passcod_box.Text.Remove(passcod_box.Text.Length - 1);
             }
+        }
+
+        private void timer1_Tick_1(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void login_to_test_Click(object sender, EventArgs e)
+        {
+            choose_dp_combo.Enabled = false;
+            choose_machin_combo.Enabled = false;
+            tests_combo.Enabled = true;
+           // timer_get_machine.Enabled = false;
+            DBC.id_machin(choose_machin_combo.Text);
+            DBC.test_id_to_list(Convert.ToInt32(DBC.message));
+            DBC.tests_name_sync();
+
+
+            String[] testlist = File.ReadAllText("temp").ToString().Split('%');
+            for (int i = 0; i < Convert.ToInt32(testlist.Length.ToString()) - 1; i++)
+            {
+                tests_combo.Items.Add(testlist[i]);
+            }
+
+            File.WriteAllText("temp", "");
+            
+        }
+
+        private void tests_combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DBC.id_test(tests_combo.Text);
+            DBC.test_name(Convert.ToInt32(DBC.message));
+            qus_textbox.Text = DBC.tests_qus;
+            answ_textbox.Enabled = true;
+            answ_textbox.Text = "";
         }
     }
 }

@@ -167,9 +167,10 @@ namespace dr
 
         private void login_to_test_Click(object sender, EventArgs e)
         {
+            login_to_test.Enabled = false;
             choose_dp_combo.Enabled = false;
             choose_machin_combo.Enabled = false;
-            tests_combo.Enabled = true;
+            choose_tests_combo.Enabled = true;
            // timer_get_machine.Enabled = false;
             DBC.id_machin(choose_machin_combo.Text);
             DBC.test_id_to_list(Convert.ToInt32(DBC.message));
@@ -179,7 +180,7 @@ namespace dr
             String[] testlist = File.ReadAllText("temp").ToString().Split('%');
             for (int i = 0; i < Convert.ToInt32(testlist.Length.ToString()) - 1; i++)
             {
-                tests_combo.Items.Add(testlist[i]);
+                choose_tests_combo.Items.Add(testlist[i]);
             }
 
             File.WriteAllText("temp", "");
@@ -188,9 +189,10 @@ namespace dr
 
         private void tests_combo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DBC.id_test(tests_combo.Text);
+            DBC.id_test(choose_tests_combo.Text);
             DBC.test_name(Convert.ToInt32(DBC.message));
             qus_textbox.Text = DBC.tests_qus;
+            choose_tests_combo.Enabled = false;
             answ_textbox.Enabled = true;
             answ_textbox.Text = "";
         }

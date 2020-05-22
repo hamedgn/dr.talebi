@@ -673,6 +673,32 @@ namespace dr
             }
 
         }
+
+        public void check_sync(int dep_id, int mach_id)
+        {
+            string query = "CALL `check_sync`('" + dep_id + "', '" + mach_id + "')";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["id"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
     }
 
    

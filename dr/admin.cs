@@ -217,9 +217,19 @@ namespace dr
             int dep_id = Convert.ToInt32(DBC.message);
             DBC.id_machin(machine_combo.SelectedItem.ToString());
             int mach_id = Convert.ToInt32(DBC.message);
-            DBC.insert_sync_dep_mach(dep_id, mach_id);
-            MessageBox.Show(DBC.message);
-            deisable_all();
+            DBC.message = "";
+            DBC.check_sync(dep_id, mach_id);
+            if (DBC.message == "")
+            {
+                DBC.insert_sync_dep_mach(dep_id, mach_id);
+                MessageBox.Show(DBC.message);
+                deisable_all();
+            }
+            else
+            {
+                MessageBox.Show("قبلا تعریف شده");
+            }
+            
         }
     }
 }

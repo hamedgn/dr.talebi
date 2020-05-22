@@ -58,7 +58,7 @@
             this.test_name_lb = new System.Windows.Forms.Label();
             this.test_name_box = new System.Windows.Forms.TextBox();
             this.test_machine_lb = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.test_machine_combo = new System.Windows.Forms.ComboBox();
             this.test_text_lb = new System.Windows.Forms.Label();
             this.test_text_box = new System.Windows.Forms.TextBox();
             this.save_test_btn = new System.Windows.Forms.Button();
@@ -72,6 +72,7 @@
             this.create_user.TabIndex = 0;
             this.create_user.Text = "تعریف کاربر";
             this.create_user.UseVisualStyleBackColor = true;
+            this.create_user.Click += new System.EventHandler(this.create_user_Click);
             // 
             // create_dep
             // 
@@ -81,6 +82,7 @@
             this.create_dep.TabIndex = 1;
             this.create_dep.Text = "تعریف بخش";
             this.create_dep.UseVisualStyleBackColor = true;
+            this.create_dep.Click += new System.EventHandler(this.create_dep_Click);
             // 
             // create_machine
             // 
@@ -90,6 +92,7 @@
             this.create_machine.TabIndex = 2;
             this.create_machine.Text = "تعریف دستگاه";
             this.create_machine.UseVisualStyleBackColor = true;
+            this.create_machine.Click += new System.EventHandler(this.create_machine_Click);
             // 
             // create_test
             // 
@@ -99,15 +102,17 @@
             this.create_test.TabIndex = 3;
             this.create_test.Text = "تعریف تست";
             this.create_test.UseVisualStyleBackColor = true;
+            this.create_test.Click += new System.EventHandler(this.create_test_Click);
             // 
             // connect_mach_dep
             // 
-            this.connect_mach_dep.Location = new System.Drawing.Point(283, 13);
+            this.connect_mach_dep.Location = new System.Drawing.Point(276, 13);
             this.connect_mach_dep.Name = "connect_mach_dep";
             this.connect_mach_dep.Size = new System.Drawing.Size(128, 23);
             this.connect_mach_dep.TabIndex = 4;
             this.connect_mach_dep.Text = "ارتباط دستگاه با بخش";
             this.connect_mach_dep.UseVisualStyleBackColor = true;
+            this.connect_mach_dep.Click += new System.EventHandler(this.connect_mach_dep_Click);
             // 
             // pr_code_lb
             // 
@@ -138,21 +143,26 @@
             // 
             // prs_cod_box
             // 
+            this.prs_cod_box.Enabled = false;
             this.prs_cod_box.Location = new System.Drawing.Point(692, 81);
             this.prs_cod_box.Name = "prs_cod_box";
             this.prs_cod_box.Size = new System.Drawing.Size(100, 20);
             this.prs_cod_box.TabIndex = 8;
+            this.prs_cod_box.TextChanged += new System.EventHandler(this.prs_cod_box_TextChanged);
             // 
             // password_box
             // 
+            this.password_box.Enabled = false;
             this.password_box.Location = new System.Drawing.Point(692, 120);
             this.password_box.Name = "password_box";
             this.password_box.Size = new System.Drawing.Size(100, 20);
             this.password_box.TabIndex = 9;
+            this.password_box.TextChanged += new System.EventHandler(this.password_box_TextChanged);
             // 
             // premission_level_combo
             // 
             this.premission_level_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.premission_level_combo.Enabled = false;
             this.premission_level_combo.FormattingEnabled = true;
             this.premission_level_combo.Items.AddRange(new object[] {
             "تایید نشده",
@@ -165,12 +175,14 @@
             // 
             // save_user_create_btn
             // 
+            this.save_user_create_btn.Enabled = false;
             this.save_user_create_btn.Location = new System.Drawing.Point(706, 233);
             this.save_user_create_btn.Name = "save_user_create_btn";
             this.save_user_create_btn.Size = new System.Drawing.Size(75, 23);
             this.save_user_create_btn.TabIndex = 11;
             this.save_user_create_btn.Text = "ذخیره کاربر";
             this.save_user_create_btn.UseVisualStyleBackColor = true;
+            this.save_user_create_btn.Click += new System.EventHandler(this.save_user_create_btn_Click);
             // 
             // dep_name_lb
             // 
@@ -192,13 +204,16 @@
             // 
             // dep_name_box
             // 
+            this.dep_name_box.Enabled = false;
             this.dep_name_box.Location = new System.Drawing.Point(567, 81);
             this.dep_name_box.Name = "dep_name_box";
             this.dep_name_box.Size = new System.Drawing.Size(100, 20);
             this.dep_name_box.TabIndex = 14;
+            this.dep_name_box.TextChanged += new System.EventHandler(this.dep_name_box_TextChanged);
             // 
             // dep_id_box
             // 
+            this.dep_id_box.Enabled = false;
             this.dep_id_box.Location = new System.Drawing.Point(567, 120);
             this.dep_id_box.Name = "dep_id_box";
             this.dep_id_box.ReadOnly = true;
@@ -209,25 +224,29 @@
             // 
             // save_dep_btn
             // 
+            this.save_dep_btn.Enabled = false;
             this.save_dep_btn.Location = new System.Drawing.Point(581, 232);
             this.save_dep_btn.Name = "save_dep_btn";
             this.save_dep_btn.Size = new System.Drawing.Size(75, 23);
             this.save_dep_btn.TabIndex = 16;
             this.save_dep_btn.Text = "ذخیره بخش";
             this.save_dep_btn.UseVisualStyleBackColor = true;
+            this.save_dep_btn.Click += new System.EventHandler(this.save_dep_btn_Click);
             // 
             // save_machine_btn
             // 
-            this.save_machine_btn.Location = new System.Drawing.Point(449, 232);
+            this.save_machine_btn.Enabled = false;
+            this.save_machine_btn.Location = new System.Drawing.Point(435, 232);
             this.save_machine_btn.Name = "save_machine_btn";
-            this.save_machine_btn.Size = new System.Drawing.Size(75, 23);
+            this.save_machine_btn.Size = new System.Drawing.Size(89, 23);
             this.save_machine_btn.TabIndex = 21;
-            this.save_machine_btn.Text = "ذخیره بخش";
+            this.save_machine_btn.Text = "ذخیره دستگاه";
             this.save_machine_btn.UseVisualStyleBackColor = true;
             this.save_machine_btn.Click += new System.EventHandler(this.save_machine_btn_Click);
             // 
             // machine_id_box
             // 
+            this.machine_id_box.Enabled = false;
             this.machine_id_box.Location = new System.Drawing.Point(435, 120);
             this.machine_id_box.Name = "machine_id_box";
             this.machine_id_box.ReadOnly = true;
@@ -238,6 +257,7 @@
             // 
             // machine_name_box
             // 
+            this.machine_name_box.Enabled = false;
             this.machine_name_box.Location = new System.Drawing.Point(435, 81);
             this.machine_name_box.Name = "machine_name_box";
             this.machine_name_box.Size = new System.Drawing.Size(100, 20);
@@ -264,6 +284,7 @@
             // dep_combo
             // 
             this.dep_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.dep_combo.Enabled = false;
             this.dep_combo.FormattingEnabled = true;
             this.dep_combo.Location = new System.Drawing.Point(283, 81);
             this.dep_combo.Name = "dep_combo";
@@ -273,6 +294,7 @@
             // machine_combo
             // 
             this.machine_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.machine_combo.Enabled = false;
             this.machine_combo.FormattingEnabled = true;
             this.machine_combo.Location = new System.Drawing.Point(283, 118);
             this.machine_combo.Name = "machine_combo";
@@ -299,12 +321,14 @@
             // 
             // save_sync_mach_dep_btn
             // 
+            this.save_sync_mach_dep_btn.Enabled = false;
             this.save_sync_mach_dep_btn.Location = new System.Drawing.Point(311, 232);
             this.save_sync_mach_dep_btn.Name = "save_sync_mach_dep_btn";
             this.save_sync_mach_dep_btn.Size = new System.Drawing.Size(75, 23);
             this.save_sync_mach_dep_btn.TabIndex = 26;
             this.save_sync_mach_dep_btn.Text = "ذخیره";
             this.save_sync_mach_dep_btn.UseVisualStyleBackColor = true;
+            this.save_sync_mach_dep_btn.Click += new System.EventHandler(this.save_sync_mach_dep_btn_Click);
             // 
             // test_name_lb
             // 
@@ -317,6 +341,7 @@
             // 
             // test_name_box
             // 
+            this.test_name_box.Enabled = false;
             this.test_name_box.Location = new System.Drawing.Point(71, 81);
             this.test_name_box.Name = "test_name_box";
             this.test_name_box.Size = new System.Drawing.Size(100, 20);
@@ -331,14 +356,15 @@
             this.test_machine_lb.TabIndex = 29;
             this.test_machine_lb.Text = "دستگاه";
             // 
-            // comboBox1
+            // test_machine_combo
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(71, 118);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 30;
+            this.test_machine_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.test_machine_combo.Enabled = false;
+            this.test_machine_combo.FormattingEnabled = true;
+            this.test_machine_combo.Location = new System.Drawing.Point(71, 118);
+            this.test_machine_combo.Name = "test_machine_combo";
+            this.test_machine_combo.Size = new System.Drawing.Size(100, 21);
+            this.test_machine_combo.TabIndex = 30;
             // 
             // test_text_lb
             // 
@@ -351,6 +377,7 @@
             // 
             // test_text_box
             // 
+            this.test_text_box.Enabled = false;
             this.test_text_box.Location = new System.Drawing.Point(49, 162);
             this.test_text_box.Multiline = true;
             this.test_text_box.Name = "test_text_box";
@@ -359,12 +386,14 @@
             // 
             // save_test_btn
             // 
+            this.save_test_btn.Enabled = false;
             this.save_test_btn.Location = new System.Drawing.Point(87, 383);
             this.save_test_btn.Name = "save_test_btn";
             this.save_test_btn.Size = new System.Drawing.Size(75, 23);
             this.save_test_btn.TabIndex = 33;
             this.save_test_btn.Text = "ذخیره تست";
             this.save_test_btn.UseVisualStyleBackColor = true;
+            this.save_test_btn.Click += new System.EventHandler(this.save_test_btn_Click);
             // 
             // admin
             // 
@@ -374,7 +403,7 @@
             this.Controls.Add(this.save_test_btn);
             this.Controls.Add(this.test_text_box);
             this.Controls.Add(this.test_text_lb);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.test_machine_combo);
             this.Controls.Add(this.test_machine_lb);
             this.Controls.Add(this.test_name_box);
             this.Controls.Add(this.test_name_lb);
@@ -444,7 +473,7 @@
         private System.Windows.Forms.Label test_name_lb;
         private System.Windows.Forms.TextBox test_name_box;
         private System.Windows.Forms.Label test_machine_lb;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox test_machine_combo;
         private System.Windows.Forms.Label test_text_lb;
         private System.Windows.Forms.TextBox test_text_box;
         private System.Windows.Forms.Button save_test_btn;

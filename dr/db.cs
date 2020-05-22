@@ -198,6 +198,31 @@ namespace dr
             }
 
         }
+        public void count_machine()
+        {
+            string query = "CALL `count machine`()";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
         public void name_departman(int id_dep)
         {
             string query = "CALL `departman name`("+id_dep+")";
@@ -496,6 +521,136 @@ namespace dr
         public void insert_tests_users(int test_id,int user_id,string date,string user_answer)
         {
             string query = "CALL `insert_users_answ`('"+test_id+"', '"+user_id+"', '"+date+"', '"+user_answer+"')";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+
+        public void insert_users(int pr_cod, int pass, int permission)
+        {
+            string query = "CALL `insert_user`('" + pr_cod + "', '" + pass + "', '" + permission + "')";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+
+        public void insert_departman(string dep_name)
+        {
+            string query = "CALL `insert_departman`('" + dep_name + "')";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+
+        public void insert_machine(string machine_name)
+        {
+            string query = "CALL `insert_machine`('" + machine_name + "')";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+
+        public void insert_test(string test_name, int machine_id, string qus)
+        {
+            string query = "CALL `insert_test`('" + test_name + "', '" + machine_id + "', '" + qus + "')";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+
+        public void insert_sync_dep_mach(int dep_id, int mach_id)
+        {
+            string query = "CALL `insert_sync_dep_mach`('" + dep_id + "', '" + mach_id + "')";
 
             if (this.OpenConnection() == true)
             {

@@ -171,11 +171,20 @@ namespace dr
             choose_dp_combo.Enabled = false;
             choose_machin_combo.Enabled = false;
             choose_tests_combo.Enabled = true;
-           // timer_get_machine.Enabled = false;
+            int j = choose_tests_combo.Items.Count;
+            for ( int i=0 ; i <j ; i++)
+            {
+                choose_tests_combo.Items.RemoveAt(0);
+            }
+            answ_textbox.Text = "";
+            qus_textbox.Text = "";
+            answ_textbox.Enabled = false;
+
+            // timer_get_machine.Enabled = false;
             DBC.id_machin(choose_machin_combo.Text);
             DBC.test_id_to_list(Convert.ToInt32(DBC.message));
             DBC.tests_name_sync();
-
+            
 
             String[] testlist = File.ReadAllText("temp").ToString().Split('%');
             for (int i = 0; i < Convert.ToInt32(testlist.Length.ToString()) - 1; i++)
@@ -195,6 +204,55 @@ namespace dr
             choose_tests_combo.Enabled = false;
             answ_textbox.Enabled = true;
             answ_textbox.Text = "";
+            save_qus_btn.Enabled = true;
+            change_machine_btn.Enabled = true;
+            save_exit_btn.Enabled = true;
+        }
+
+        private void save_qus_btn_Click(object sender, EventArgs e)
+        {
+            DBC.id_test(choose_tests_combo.Text);
+            
+            DBC.insert_tests_users(Convert.ToInt32(DBC.message),Convert.ToInt32(pr_cod_box.Text),date_lb.Text+" "+time_lb.Text,answ_textbox.Text);
+            MessageBox.Show(DBC.message);
+            login_to_test_Click(sender, e);
+        }
+
+        private void answ_textbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void change_machine_btn_Click(object sender, EventArgs e)
+        {
+            choose_machin_combo.Enabled = true;
+            login_to_test.Enabled = true;
+            choose_tests_combo.Enabled = false;
+            int j = choose_tests_combo.Items.Count;
+            for (int i = 0; i < j; i++)
+            {
+                choose_tests_combo.Items.RemoveAt(0);
+            }
+            answ_textbox.Text = "";
+            qus_textbox.Text = "";
+            answ_textbox.Enabled = false;
+            save_qus_btn.Enabled = false;
+            save_exit_btn.Enabled = false;
+        }
+
+        private void save_exit_btn_Click(object sender, EventArgs e)
+        {
+            if (answ_textbox.Text !="")
+            {
+                save_qus_btn_Click(sender, e);
+            }
+            else
+            {
+
+            }
+            login NewForm = new login();
+            NewForm.Show();
+            this.Dispose(false);
         }
     }
 }

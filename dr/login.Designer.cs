@@ -245,6 +245,7 @@
             this.answ_textbox.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.answ_textbox.Size = new System.Drawing.Size(393, 55);
             this.answ_textbox.TabIndex = 18;
+            this.answ_textbox.TextChanged += new System.EventHandler(this.answ_textbox_TextChanged);
             // 
             // save_qus_btn
             // 
@@ -255,6 +256,7 @@
             this.save_qus_btn.TabIndex = 20;
             this.save_qus_btn.Text = "ذخیره";
             this.save_qus_btn.UseVisualStyleBackColor = true;
+            this.save_qus_btn.Click += new System.EventHandler(this.save_qus_btn_Click);
             // 
             // change_machine_btn
             // 
@@ -265,6 +267,7 @@
             this.change_machine_btn.TabIndex = 21;
             this.change_machine_btn.Text = "تغییر دستگاه";
             this.change_machine_btn.UseVisualStyleBackColor = true;
+            this.change_machine_btn.Click += new System.EventHandler(this.change_machine_btn_Click);
             // 
             // save_exit_btn
             // 
@@ -275,6 +278,7 @@
             this.save_exit_btn.TabIndex = 22;
             this.save_exit_btn.Text = "ذخیره نهایی و خروج";
             this.save_exit_btn.UseVisualStyleBackColor = true;
+            this.save_exit_btn.Click += new System.EventHandler(this.save_exit_btn_Click);
             // 
             // timer1
             // 

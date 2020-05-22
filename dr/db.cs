@@ -58,7 +58,7 @@ namespace dr
             password = "";
             string connectionString;
             connectionString = "SERVER=" + server + ";" + "DATABASE=" +
-            database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + ";";
+            database + ";" + "UID=" + uid + ";" + "PASSWORD=" + password + "; CharSet=utf8;";
 
             connection = new MySqlConnection(connectionString);
         }
@@ -470,6 +470,32 @@ namespace dr
         public void id_test(string name_test)
         {
             string query = "CALL `test _id`('" + name_test + "')";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+
+        public void insert_tests_users(int test_id,int user_id,string date,string user_answer)
+        {
+            string query = "CALL `insert_users_answ`('"+test_id+"', '"+user_id+"', '"+date+"', '"+user_answer+"')";
 
             if (this.OpenConnection() == true)
             {

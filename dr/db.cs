@@ -223,6 +223,32 @@ namespace dr
             }
 
         }
+
+        public void count_user()
+        {
+            string query = "CALL `count_user`()";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
         public void name_departman(int id_dep)
         {
             string query = "CALL `departman name`("+id_dep+")";
@@ -324,6 +350,102 @@ namespace dr
             }
 
         }
+        public void id_user(string name_mach)
+        {
+            string query = "CALL `user_id`('" + name_mach + "')";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+        public void name_user(int id_user)
+        {
+            string query = "CALL `name_user`(" + id_user + ")";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+        IList<int> test_list = new List<int>();
+        public void sync_test_user(int id_user)
+        {
+            string query = "CALL `sync_user_test`(" + id_user + ")";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+                {
+
+                    test_list.Add(Convert.ToInt32(myreader["id"].ToString()));
+
+                }
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+
+        public void sync_test_user_name()
+        {
+            int j = test_list.Count;
+            for (int i = 0; i < j; i++)
+            {
+
+                test_name(test_list[i]);
+                string temp = "";
+                temp = File.ReadAllText("temp");
+
+                File.WriteAllText("temp", temp + tests_name + "%");
+
+            }
+
+            for (int i = 0; i < j; i++)
+            {
+                test_list.RemoveAt(0);
+            }
+        }
+
         IList<int> machine_list = new List<int>();
         public void sync_departman(int id_dep)
         {
@@ -399,6 +521,31 @@ namespace dr
         public void count_test(int machine_id)
         {
             string query = "CALL `count_test`('" + machine_id + "')";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+        }
+
+        public void count_test_all()
+        {
+            string query = "CALL `count_test_all`()";
 
             if (this.OpenConnection() == true)
             {

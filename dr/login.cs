@@ -26,7 +26,7 @@ namespace dr
             date_lb.Text = webData1;
 
             
-            date_lb.Text = persiandate(Convert.ToDateTime(date_lb.Text));
+           // date_lb.Text = persiandate(Convert.ToDateTime(date_lb.Text));
         }
         string persiandate(DateTime dateTime1)
         {

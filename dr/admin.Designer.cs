@@ -75,7 +75,6 @@
             this.test_num_test_lb = new System.Windows.Forms.Label();
             this.pr_cod_test_lb = new System.Windows.Forms.Label();
             this.uesr_tab = new System.Windows.Forms.TabPage();
-            this.test_time_user_datepicker = new System.Windows.Forms.DateTimePicker();
             this.pr_cod_user_combo = new System.Windows.Forms.ComboBox();
             this.save_edit_user_btn = new System.Windows.Forms.Button();
             this.user_answ_user_box = new System.Windows.Forms.TextBox();
@@ -86,6 +85,8 @@
             this.pr_cod_user_lb = new System.Windows.Forms.Label();
             this.edit_qus_user_tab = new System.Windows.Forms.TabControl();
             this.timer_get_test_user = new System.Windows.Forms.Timer(this.components);
+            this.test_time_user_datepicker = new System.Windows.Forms.DateTimePicker();
+            this.timer_get_user_test = new System.Windows.Forms.Timer(this.components);
             this.qus_tab.SuspendLayout();
             this.uesr_tab.SuspendLayout();
             this.edit_qus_user_tab.SuspendLayout();
@@ -456,7 +457,7 @@
             // 
             this.test_time_test_datepicker.AccessibleRole = System.Windows.Forms.AccessibleRole.Clock;
             this.test_time_test_datepicker.AllowDrop = true;
-            this.test_time_test_datepicker.CustomFormat = "yyyy/mm/dd hh:mm:ss";
+            this.test_time_test_datepicker.CustomFormat = "yyyy-MM-dd HH:mm:ss";
             this.test_time_test_datepicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
             this.test_time_test_datepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.test_time_test_datepicker.Location = new System.Drawing.Point(6, 103);
@@ -472,6 +473,7 @@
             this.pr_cod_test_combo.Name = "pr_cod_test_combo";
             this.pr_cod_test_combo.Size = new System.Drawing.Size(121, 21);
             this.pr_cod_test_combo.TabIndex = 44;
+            this.pr_cod_test_combo.SelectedIndexChanged += new System.EventHandler(this.pr_cod_test_combo_SelectedIndexChanged);
             // 
             // save_edit_test_btn
             // 
@@ -481,6 +483,7 @@
             this.save_edit_test_btn.TabIndex = 43;
             this.save_edit_test_btn.Text = "تایید ویرایش";
             this.save_edit_test_btn.UseVisualStyleBackColor = true;
+            this.save_edit_test_btn.Click += new System.EventHandler(this.save_edit_test_btn_Click);
             // 
             // user_answ_test_box
             // 
@@ -516,6 +519,7 @@
             this.test_num_test_combo.Name = "test_num_test_combo";
             this.test_num_test_combo.Size = new System.Drawing.Size(121, 21);
             this.test_num_test_combo.TabIndex = 39;
+            this.test_num_test_combo.SelectedIndexChanged += new System.EventHandler(this.test_num_test_combo_SelectedIndexChanged);
             // 
             // test_num_test_lb
             // 
@@ -555,18 +559,6 @@
             this.uesr_tab.Text = "کاربر";
             this.uesr_tab.Click += new System.EventHandler(this.uesr_tab_Click);
             // 
-            // test_time_user_datepicker
-            // 
-            this.test_time_user_datepicker.AccessibleRole = System.Windows.Forms.AccessibleRole.Clock;
-            this.test_time_user_datepicker.AllowDrop = true;
-            this.test_time_user_datepicker.CustomFormat = "yyyy/mm/dd hh:mm:ss";
-            this.test_time_user_datepicker.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.test_time_user_datepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.test_time_user_datepicker.Location = new System.Drawing.Point(7, 98);
-            this.test_time_user_datepicker.Name = "test_time_user_datepicker";
-            this.test_time_user_datepicker.Size = new System.Drawing.Size(178, 20);
-            this.test_time_user_datepicker.TabIndex = 36;
-            // 
             // pr_cod_user_combo
             // 
             this.pr_cod_user_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -585,12 +577,14 @@
             this.save_edit_user_btn.TabIndex = 8;
             this.save_edit_user_btn.Text = "تایید ویرایش";
             this.save_edit_user_btn.UseVisualStyleBackColor = true;
+            this.save_edit_user_btn.Click += new System.EventHandler(this.save_edit_user_btn_Click);
             // 
             // user_answ_user_box
             // 
             this.user_answ_user_box.Location = new System.Drawing.Point(7, 139);
             this.user_answ_user_box.Multiline = true;
             this.user_answ_user_box.Name = "user_answ_user_box";
+            this.user_answ_user_box.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.user_answ_user_box.Size = new System.Drawing.Size(178, 159);
             this.user_answ_user_box.TabIndex = 7;
             // 
@@ -620,6 +614,7 @@
             this.test_num_user_combo.Name = "test_num_user_combo";
             this.test_num_user_combo.Size = new System.Drawing.Size(121, 21);
             this.test_num_user_combo.TabIndex = 3;
+            this.test_num_user_combo.SelectedIndexChanged += new System.EventHandler(this.test_num_user_combo_SelectedIndexChanged);
             // 
             // test_num_user_lb
             // 
@@ -653,6 +648,20 @@
             // timer_get_test_user
             // 
             this.timer_get_test_user.Tick += new System.EventHandler(this.timer_get_test_user_Tick);
+            // 
+            // test_time_user_datepicker
+            // 
+            this.test_time_user_datepicker.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.test_time_user_datepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.test_time_user_datepicker.Location = new System.Drawing.Point(8, 98);
+            this.test_time_user_datepicker.Name = "test_time_user_datepicker";
+            this.test_time_user_datepicker.Size = new System.Drawing.Size(177, 20);
+            this.test_time_user_datepicker.TabIndex = 11;
+            this.test_time_user_datepicker.Value = new System.DateTime(2020, 5, 23, 19, 8, 0, 0);
+            // 
+            // timer_get_user_test
+            // 
+            this.timer_get_user_test.Tick += new System.EventHandler(this.timer_get_user_test_Tick);
             // 
             // admin
             // 
@@ -755,7 +764,6 @@
         private System.Windows.Forms.Label test_num_test_lb;
         private System.Windows.Forms.Label pr_cod_test_lb;
         private System.Windows.Forms.TabPage uesr_tab;
-        private System.Windows.Forms.DateTimePicker test_time_user_datepicker;
         private System.Windows.Forms.ComboBox pr_cod_user_combo;
         private System.Windows.Forms.Button save_edit_user_btn;
         private System.Windows.Forms.TextBox user_answ_user_box;
@@ -766,5 +774,7 @@
         private System.Windows.Forms.Label pr_cod_user_lb;
         private System.Windows.Forms.TabControl edit_qus_user_tab;
         private System.Windows.Forms.Timer timer_get_test_user;
+        private System.Windows.Forms.DateTimePicker test_time_user_datepicker;
+        private System.Windows.Forms.Timer timer_get_user_test;
     }
 }

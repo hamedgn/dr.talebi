@@ -96,7 +96,7 @@ namespace dr
             }
             test_num_user_combo.Enabled = false;
 
-            test_time_user_datepicker.Value.ToLocalTime();
+            test_time_user_datepicker.Text="";
             test_time_user_datepicker.Enabled = false;
             user_answ_user_box.Text = "";
             user_answ_user_box.Enabled = false;
@@ -298,7 +298,7 @@ namespace dr
                 test_num_user_combo.Items.RemoveAt(0);
             }
             test_num_user_combo.Enabled = false;
-            test_time_user_datepicker.Value.ToLocalTime();
+            test_time_user_datepicker.Text="";
             test_time_user_datepicker.Enabled = false;
             user_answ_user_box.Text = "";
             user_answ_user_box.Enabled = false;
@@ -375,6 +375,78 @@ namespace dr
 
             File.WriteAllText("temp", "");
             test_num_user_combo.Enabled = true;
+        }
+
+        private void test_num_user_combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DBC.id_test(test_num_user_combo.SelectedItem.ToString());
+            DBC.test_user_answr(Convert.ToInt32(DBC.message), Convert.ToInt32(pr_cod_user_combo.SelectedItem.ToString()));
+            test_time_user_datepicker.Text = DBC.date_answer.ToString();
+            user_answ_user_box.Text = DBC.answer;
+            test_num_user_combo.Enabled = false;
+            pr_cod_user_combo.Enabled = false;
+            test_time_user_datepicker.Enabled = true;
+            user_answ_user_box.Enabled = true;
+            save_edit_user_btn.Enabled = true;
+            
+        }
+
+        private void save_edit_user_btn_Click(object sender, EventArgs e)
+        {
+            DBC.id_test(test_num_user_combo.SelectedItem.ToString());
+            DBC.edit_tests_users(Convert.ToInt32(DBC.message), Convert.ToInt32(pr_cod_user_combo.SelectedItem.ToString()), test_time_user_datepicker.Text, user_answ_user_box.Text);
+            MessageBox.Show(DBC.message);
+            deisable_all();
+        }
+
+        private void test_num_test_combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            int j = pr_cod_test_combo.Items.Count;
+            for (int i = 0; i < j; i++)
+            {
+                pr_cod_test_combo.Items.RemoveAt(0);
+            }
+
+            timer_get_user_test.Enabled = true;
+        }
+
+        private void timer_get_user_test_Tick(object sender, EventArgs e)
+        {
+            timer_get_user_test.Enabled = false;
+            DBC.id_test(test_num_test_combo.Text);
+            DBC.sync_user_test(Convert.ToInt32(DBC.message));
+            DBC.sync_user_test_name();
+
+
+            String[] user_list = File.ReadAllText("temp").ToString().Split('%');
+            for (int i = 0; i < Convert.ToInt32(user_list.Length.ToString()) - 1; i++)
+            {
+                pr_cod_test_combo.Items.Add(user_list[i]);
+            }
+
+            File.WriteAllText("temp", "");
+            pr_cod_test_combo.Enabled = true;
+        }
+
+        private void pr_cod_test_combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DBC.id_test(test_num_test_combo.SelectedItem.ToString());
+            DBC.test_user_answr(Convert.ToInt32(DBC.message), Convert.ToInt32(pr_cod_test_combo.SelectedItem.ToString()));
+            test_time_test_datepicker.Text = DBC.date_answer.ToString();
+            user_answ_test_box.Text = DBC.answer;
+            test_num_test_combo.Enabled = false;
+            pr_cod_test_combo.Enabled = false;
+            test_time_test_datepicker.Enabled = true;
+            user_answ_test_box.Enabled = true;
+            save_edit_test_btn.Enabled = true;
+        }
+
+        private void save_edit_test_btn_Click(object sender, EventArgs e)
+        {
+            DBC.id_test(test_num_test_combo.SelectedItem.ToString());
+            DBC.edit_tests_users(Convert.ToInt32(DBC.message), Convert.ToInt32(pr_cod_test_combo.SelectedItem.ToString()), test_time_test_datepicker.Text, user_answ_test_box.Text);
+            MessageBox.Show(DBC.message);
+            deisable_all();
         }
     }
 }

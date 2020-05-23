@@ -846,7 +846,107 @@ namespace dr
             }
 
         }
+        public string answer;
+        public string date_answer;
+        public void test_user_answr(int test_id,int user_id)
+        {
+            string query = "CALL `select_answer`(" + test_id + ","+user_id+")";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+                {
+                    //check pass with user
+                    date_answer = myreader["date"].ToString();
+                    answer = myreader["user_answer"].ToString();
+                    // user = myreader["pr_cod"].ToString();
+                }
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+
+        public void edit_tests_users(int test_id, int user_id, string date, string user_answer)
+        {
+            string query = "CALL `edit_answer`('" + test_id + "', '" + user_id + "', '" + date + "', '" + user_answer + "')";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+
+
+                    //check pass with user
+                    message = myreader["message"].ToString();
+                // user = myreader["pr_cod"].ToString();
+
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+        IList<int> user_list = new List<int>();
+        public void sync_user_test(int id_test)
+        {
+            string query = "CALL `sync_test_user`(" + id_test + ")";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+                {
+
+                    user_list.Add(Convert.ToInt32(myreader["user_id"].ToString()));
+
+                }
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+
+        public void sync_user_test_name()
+        {
+            int j = user_list.Count;
+            for (int i = 0; i < j; i++)
+            {
+
+                //test_name_user(user_list[i]);
+                string temp = "";
+                temp = File.ReadAllText("temp");
+
+                File.WriteAllText("temp", temp + user_list[i].ToString() + "%");
+
+            }
+
+            for (int i = 0; i < j; i++)
+            {
+                user_list.RemoveAt(0);
+            }
+        }
+
+
     }
 
-   
+
 }

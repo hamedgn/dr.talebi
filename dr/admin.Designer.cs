@@ -75,6 +75,7 @@
             this.test_num_test_lb = new System.Windows.Forms.Label();
             this.pr_cod_test_lb = new System.Windows.Forms.Label();
             this.uesr_tab = new System.Windows.Forms.TabPage();
+            this.test_time_user_datepicker = new System.Windows.Forms.DateTimePicker();
             this.pr_cod_user_combo = new System.Windows.Forms.ComboBox();
             this.save_edit_user_btn = new System.Windows.Forms.Button();
             this.user_answ_user_box = new System.Windows.Forms.TextBox();
@@ -85,8 +86,8 @@
             this.pr_cod_user_lb = new System.Windows.Forms.Label();
             this.edit_qus_user_tab = new System.Windows.Forms.TabControl();
             this.timer_get_test_user = new System.Windows.Forms.Timer(this.components);
-            this.test_time_user_datepicker = new System.Windows.Forms.DateTimePicker();
             this.timer_get_user_test = new System.Windows.Forms.Timer(this.components);
+            this.exit = new System.Windows.Forms.Button();
             this.qus_tab.SuspendLayout();
             this.uesr_tab.SuspendLayout();
             this.edit_qus_user_tab.SuspendLayout();
@@ -559,6 +560,16 @@
             this.uesr_tab.Text = "کاربر";
             this.uesr_tab.Click += new System.EventHandler(this.uesr_tab_Click);
             // 
+            // test_time_user_datepicker
+            // 
+            this.test_time_user_datepicker.CustomFormat = "yyyy-MM-dd HH:mm:ss";
+            this.test_time_user_datepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.test_time_user_datepicker.Location = new System.Drawing.Point(8, 98);
+            this.test_time_user_datepicker.Name = "test_time_user_datepicker";
+            this.test_time_user_datepicker.Size = new System.Drawing.Size(177, 20);
+            this.test_time_user_datepicker.TabIndex = 11;
+            this.test_time_user_datepicker.Value = new System.DateTime(2020, 5, 23, 19, 8, 0, 0);
+            // 
             // pr_cod_user_combo
             // 
             this.pr_cod_user_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -649,25 +660,27 @@
             // 
             this.timer_get_test_user.Tick += new System.EventHandler(this.timer_get_test_user_Tick);
             // 
-            // test_time_user_datepicker
-            // 
-            this.test_time_user_datepicker.CustomFormat = "yyyy-MM-dd HH:mm:ss";
-            this.test_time_user_datepicker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.test_time_user_datepicker.Location = new System.Drawing.Point(8, 98);
-            this.test_time_user_datepicker.Name = "test_time_user_datepicker";
-            this.test_time_user_datepicker.Size = new System.Drawing.Size(177, 20);
-            this.test_time_user_datepicker.TabIndex = 11;
-            this.test_time_user_datepicker.Value = new System.DateTime(2020, 5, 23, 19, 8, 0, 0);
-            // 
             // timer_get_user_test
             // 
             this.timer_get_user_test.Tick += new System.EventHandler(this.timer_get_user_test_Tick);
+            // 
+            // exit
+            // 
+            this.exit.Location = new System.Drawing.Point(842, 410);
+            this.exit.Name = "exit";
+            this.exit.Size = new System.Drawing.Size(75, 23);
+            this.exit.TabIndex = 36;
+            this.exit.Text = "خروج";
+            this.exit.UseVisualStyleBackColor = true;
+            this.exit.Click += new System.EventHandler(this.exit_Click);
             // 
             // admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(983, 450);
+            this.ControlBox = false;
+            this.Controls.Add(this.exit);
             this.Controls.Add(this.edit_qus_user_tab);
             this.Controls.Add(this.edit_user_test_btn);
             this.Controls.Add(this.save_test_btn);
@@ -776,5 +789,6 @@
         private System.Windows.Forms.Timer timer_get_test_user;
         private System.Windows.Forms.DateTimePicker test_time_user_datepicker;
         private System.Windows.Forms.Timer timer_get_user_test;
+        private System.Windows.Forms.Button exit;
     }
 }

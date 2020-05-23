@@ -25,9 +25,21 @@ namespace dr
         
         private void save_machine_btn_Click(object sender, EventArgs e)
         {
-            DBC.insert_machine(machine_name_box.Text);
-            MessageBox.Show(DBC.message);
-            deisable_all();
+            DBC.message = "";
+            DBC.id_machin(machine_name_box.Text);
+            if (DBC.message == "")
+            {
+                DBC.insert_machine(machine_name_box.Text);
+                MessageBox.Show(DBC.message);
+                deisable_all();
+            }
+            else
+            {
+                MessageBox.Show("این دستگاه وجود دارد");
+            }
+
+
+            
         }
 
         private void create_user_Click(object sender, EventArgs e)
@@ -69,13 +81,13 @@ namespace dr
             save_test_btn.Enabled = false;
             dep_combo.Enabled = false;
             int b = dep_combo.Items.Count;
-            for (int i = 0; i < j; i++)
+            for (int i = 0; i < b; i++)
             {
                 dep_combo.Items.RemoveAt(0);
             }
             machine_combo.Enabled = false;
             int c = machine_combo.Items.Count;
-            for (int i = 0; i < j; i++)
+            for (int i = 0; i < c; i++)
             {
                 machine_combo.Items.RemoveAt(0);
             }
@@ -138,9 +150,18 @@ namespace dr
             {
                 j = 999;
             }
-            DBC.insert_users(Convert.ToInt32(prs_cod_box.Text), Convert.ToInt32(password_box.Text), j);
-            deisable_all();
-            MessageBox.Show(DBC.message);
+            DBC.message = "";
+            DBC.id_user(prs_cod_box.Text);
+            if (DBC.message == "")
+            {
+                DBC.insert_users(Convert.ToInt32(prs_cod_box.Text), Convert.ToInt32(password_box.Text), j);
+                deisable_all();
+                MessageBox.Show(DBC.message);
+            }
+            else
+            {
+                MessageBox.Show("این کد پرسنلی وجود دارد");
+            }
         }
 
         private void create_dep_Click(object sender, EventArgs e)
@@ -180,9 +201,20 @@ namespace dr
 
         private void save_dep_btn_Click(object sender, EventArgs e)
         {
-            DBC.insert_departman(dep_name_box.Text);
-            MessageBox.Show(DBC.message);
-            deisable_all();
+            DBC.message = "";
+            DBC.id_departman(dep_name_box.Text);
+            if (DBC.message == "")
+            {
+                DBC.insert_departman(dep_name_box.Text);
+                MessageBox.Show(DBC.message);
+                deisable_all();
+            }
+            else
+            {
+                MessageBox.Show("این بخش وجود دارد");
+            }
+
+            
         }
 
         private void create_machine_Click(object sender, EventArgs e)
@@ -220,10 +252,19 @@ namespace dr
 
         private void save_test_btn_Click(object sender, EventArgs e)
         {
-            DBC.id_machin(test_machine_combo.SelectedItem.ToString());
-            DBC.insert_test(test_name_box.Text,Convert.ToInt32(DBC.message),test_text_box.Text);
-            MessageBox.Show(DBC.message);
-            deisable_all();
+            DBC.message = "";
+            DBC.id_test(test_name_box.Text);
+            if (DBC.message == "")
+            {
+                DBC.id_machin(test_machine_combo.SelectedItem.ToString());
+                DBC.insert_test(test_name_box.Text, Convert.ToInt32(DBC.message), test_text_box.Text);
+                MessageBox.Show(DBC.message);
+                deisable_all();
+            }
+            else
+            {
+                MessageBox.Show("تست با این نام وجود دارد");
+            }
         }
         private int count_departemant;
         private int count_machine;
@@ -447,6 +488,11 @@ namespace dr
             DBC.edit_tests_users(Convert.ToInt32(DBC.message), Convert.ToInt32(pr_cod_test_combo.SelectedItem.ToString()), test_time_test_datepicker.Text, user_answ_test_box.Text);
             MessageBox.Show(DBC.message);
             deisable_all();
+        }
+
+        private void exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

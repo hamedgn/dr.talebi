@@ -150,7 +150,6 @@
             // 
             // timer_dep_list
             // 
-            this.timer_dep_list.Interval = 1000;
             this.timer_dep_list.Tick += new System.EventHandler(this.timer_dep_list_Tick);
             // 
             // choose_machin_combo

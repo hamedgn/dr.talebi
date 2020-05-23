@@ -414,7 +414,7 @@ namespace dr
                 while (myreader.Read())
                 {
 
-                    test_list.Add(Convert.ToInt32(myreader["id"].ToString()));
+                    test_list.Add(Convert.ToInt32(myreader["test_id"].ToString()));
 
                 }
 
@@ -432,7 +432,7 @@ namespace dr
             for (int i = 0; i < j; i++)
             {
 
-                test_name(test_list[i]);
+                test_name(Convert.ToInt32(test_list[i].ToString()));
                 string temp = "";
                 temp = File.ReadAllText("temp");
 
@@ -656,6 +656,33 @@ namespace dr
                     message = myreader["message"].ToString();
                 // user = myreader["pr_cod"].ToString();
 
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+
+        public void search_test(int id_test,int id_user)
+        {
+            string query = "CALL `search_test`(" + id_test + ","+id_user+")";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+                
+                    //check pass with user
+                    //message = "";
+                    message = myreader["id"].ToString();
+                    //tests_qus = myreader["question"].ToString();
+                    // user = myreader["pr_cod"].ToString();
+                
 
                 //close connection
                 this.CloseConnection();

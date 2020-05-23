@@ -62,7 +62,7 @@ namespace dr
                 MessageBox.Show("با موفقیت وارد شدید");
                 if (DBC.permission == "0")
                 {
-                    MessageBox.Show("none");
+                    MessageBox.Show("شماه هنوز تایید نشدید");
                 }
                 else if (DBC.permission == "-1")
                 {
@@ -70,18 +70,22 @@ namespace dr
                 }
                 else if (DBC.permission == "1")
                 {
-                    MessageBox.Show("normal user");
+                    MessageBox.Show("سمت: پرسنل");
+                    timer_dep_list.Enabled = true;
+                    choose_machin_combo.Enabled = true;
+                    enter_btn.Enabled = false;
+                    pr_cod_box.Enabled = false;
+                    passcod_box.Enabled = false;
+                    login_to_test.Enabled = true;
                 }
                 else if (DBC.permission == "999")
                 {
                     MessageBox.Show("admin");
+                    admin NewForm = new admin();
+                    NewForm.Show();
+                    this.Dispose(false);
                 }
-                timer_dep_list.Enabled = true;
-                choose_machin_combo.Enabled = true;
-                enter_btn.Enabled = false;
-                pr_cod_box.Enabled = false;
-                passcod_box.Enabled = false;
-                login_to_test.Enabled = true;
+                
             }
             else
             {
@@ -200,17 +204,31 @@ namespace dr
         {
             DBC.id_test(choose_tests_combo.Text);
             DBC.test_name(Convert.ToInt32(DBC.message));
-            qus_textbox.Text = DBC.tests_qus;
-            choose_tests_combo.Enabled = false;
-            answ_textbox.Enabled = true;
-            answ_textbox.Text = "";
-            save_qus_btn.Enabled = true;
-            change_machine_btn.Enabled = true;
-            save_exit_btn.Enabled = true;
+            int j = Convert.ToInt32(DBC.message);
+            DBC.message = "";
+            DBC.search_test(j, Convert.ToInt32(pr_cod_box.Text));
+            if(DBC.message == "")
+            {
+                qus_textbox.Text = DBC.tests_qus;
+                choose_tests_combo.Enabled = false;
+                answ_textbox.Enabled = true;
+                answ_textbox.Text = "";
+                save_qus_btn.Enabled = true;
+                change_machine_btn.Enabled = true;
+                save_exit_btn.Enabled = true;
+            }
+            else
+            {
+                MessageBox.Show("شما قبلا این تست را داده اید");
+                change_machine_btn.Enabled = true;
+                save_exit_btn.Enabled = true;
+            }
+            
         }
 
         private void save_qus_btn_Click(object sender, EventArgs e)
         {
+
             DBC.id_test(choose_tests_combo.Text);
             
             DBC.insert_tests_users(Convert.ToInt32(DBC.message),Convert.ToInt32(pr_cod_box.Text),date_lb.Text+" "+time_lb.Text,answ_textbox.Text);

@@ -647,7 +647,9 @@ namespace dr
                 MySqlDataReader myreader = cmd.ExecuteReader();
                 while (myreader.Read())
                 {
-                 //check pass with user
+                    f1 = ""; f2 = ""; f3 = ""; f4 = ""; f5 = ""; f6 = ""; f7 = ""; f8 = ""; f9 = ""; f10 = ""; 
+                    f11 = ""; f12 = ""; f13 = ""; f14 = ""; f15 = ""; f16 = ""; f17 = ""; f18 = ""; f19 = ""; f20 = "";
+                    //check pass with user
                     tests_name = myreader["name"].ToString();
                     tests_qus = myreader["question"].ToString();
                     no_f =Convert.ToInt32( myreader["no_f"].ToString());
@@ -950,9 +952,59 @@ namespace dr
 
         }
 
-        public void edit_tests_users(int test_id, int user_id, string date, string user_answer)
+        public void test_user_answr_id(int id)
         {
-            string query = "CALL `edit_answer`('" + test_id + "', '" + user_id + "', '" + date + "', '" + user_answer + "')";
+            string query = "CALL `select_answer_id`(" + id + ")";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+                {
+                    f1 = ""; f2 = ""; f3 = ""; f4 = ""; f5 = ""; f6 = ""; f7 = ""; f8 = ""; f9 = ""; f10 = "";
+                    f11 = ""; f12 = ""; f13 = ""; f14 = ""; f15 = ""; f16 = ""; f17 = ""; f18 = ""; f19 = ""; f20 = "";
+                    //check pass with user
+                    date_answer = myreader["date"].ToString();
+                    answer = myreader["user_answer"].ToString();
+                    f1 = myreader["f1"].ToString();
+                    f2 = myreader["f2"].ToString();
+                    f3 = myreader["f3"].ToString();
+                    f4 = myreader["f4"].ToString();
+                    f5 = myreader["f5"].ToString();
+                    f6 = myreader["f6"].ToString();
+                    f7 = myreader["f7"].ToString();
+                    f8 = myreader["f8"].ToString();
+                    f9 = myreader["f9"].ToString();
+                    f10 = myreader["f10"].ToString();
+                    f11 = myreader["f11"].ToString();
+                    f12 = myreader["f12"].ToString();
+                    f13 = myreader["f13"].ToString();
+                    f14 = myreader["f14"].ToString();
+                    f15 = myreader["f15"].ToString();
+                    f16 = myreader["f16"].ToString();
+                    f17 = myreader["f17"].ToString();
+                    f18 = myreader["f18"].ToString();
+                    f19 = myreader["f19"].ToString();
+                    f20 = myreader["f20"].ToString();
+                    // user = myreader["pr_cod"].ToString();
+                }
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+        public void edit_tests_users(int id, string date, string user_answer,string f1, string f2, string f3, string f4, string f5, string f6, string f7, string f8
+            , string f9, string f10, string f11, string f12, string f13, string f14, string f15, string f16, string f17, string f18, string f19, string f20)
+        {
+            string query = "CALL `edit_answer`('" + id + "', '" + date + "', '" + user_answer + "', '" + f1 + "', '" + f2 + "', '" + f3 + "', '" + f4 + "', '" + f5 + "'" +
+                ", '" + f6 + "', '" + f7 + "', '" + f8 + "', '" + f9 + "', '" + f10 + "', '" + f11 + "', '" + f12 + "', '" + f13 + "', '" + f14 + "', '" + f15 + "', '" + f16 + "'" +
+                ", '" + f17 + "', '" + f18 + "', '" + f19 + "', '" + f20 + "')";
 
             if (this.OpenConnection() == true)
             {

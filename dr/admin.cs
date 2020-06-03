@@ -270,7 +270,89 @@ namespace dr
             test20_box.Visible = false;
             test20_lb.Visible = false;
             test20_lb.Enabled = false;
-            
+            test_num_22_user_combo.Enabled = false;
+            test_num_22_test_combo.Enabled = false;
+            user_answ_box1.Text = "";
+            user_answ_box1.Enabled = false;
+            user_answ_lb1.Enabled = false;
+            user_answ_lb1.Text = "";
+            user_answ_box2.Text = "";
+            user_answ_box2.Enabled = false;
+            user_answ_lb2.Enabled = false;
+            user_answ_lb2.Text = "";
+            user_answ_box3.Text = "";
+            user_answ_box3.Enabled = false;
+            user_answ_lb3.Enabled = false;
+            user_answ_lb3.Text = "";
+            user_answ_box4.Text = "";
+            user_answ_box4.Enabled = false;
+            user_answ_lb4.Enabled = false;
+            user_answ_lb4.Text = "";
+            user_answ_box5.Text = "";
+            user_answ_box5.Enabled = false;
+            user_answ_lb5.Enabled = false;
+            user_answ_lb5.Text = "";
+            user_answ_box6.Text = "";
+            user_answ_box6.Enabled = false;
+            user_answ_lb6.Enabled = false;
+            user_answ_lb6.Text = "";
+            user_answ_box7.Text = "";
+            user_answ_box7.Enabled = false;
+            user_answ_lb7.Enabled = false;
+            user_answ_lb7.Text = "";
+            user_answ_box8.Text = "";
+            user_answ_box8.Enabled = false;
+            user_answ_lb8.Enabled = false;
+            user_answ_lb8.Text = "";
+            user_answ_box9.Text = "";
+            user_answ_box9.Enabled = false;
+            user_answ_lb9.Enabled = false;
+            user_answ_lb9.Text = "";
+            user_answ_box10.Text = "";
+            user_answ_box10.Enabled = false;
+            user_answ_lb10.Enabled = false;
+            user_answ_lb10.Text = "";
+            user_answ_box11.Text = "";
+            user_answ_box11.Enabled = false;
+            user_answ_lb11.Enabled = false;
+            user_answ_lb11.Text = "";
+            user_answ_box12.Text = "";
+            user_answ_box12.Enabled = false;
+            user_answ_lb12.Enabled = false;
+            user_answ_lb12.Text = "";
+            user_answ_box13.Text = "";
+            user_answ_box13.Enabled = false;
+            user_answ_lb13.Enabled = false;
+            user_answ_lb13.Text = "";
+            user_answ_box14.Text = "";
+            user_answ_box14.Enabled = false;
+            user_answ_lb14.Enabled = false;
+            user_answ_lb14.Text = "";
+            user_answ_box15.Text = "";
+            user_answ_box15.Enabled = false;
+            user_answ_lb15.Enabled = false;
+            user_answ_lb15.Text = "";
+            user_answ_box16.Text = "";
+            user_answ_box16.Enabled = false;
+            user_answ_lb16.Enabled = false;
+            user_answ_lb16.Text = "";
+            user_answ_box17.Text = "";
+            user_answ_box17.Enabled = false;
+            user_answ_lb17.Enabled = false;
+            user_answ_lb17.Text = "";
+            user_answ_box18.Text = "";
+            user_answ_box18.Enabled = false;
+            user_answ_lb18.Enabled = false;
+            user_answ_lb18.Text = "";
+            user_answ_box19.Text = "";
+            user_answ_box19.Enabled = false;
+            user_answ_lb19.Enabled = false;
+            user_answ_lb19.Text = "";
+            user_answ_box20.Text = "";
+            user_answ_box20.Enabled = false;
+            user_answ_lb20.Enabled = false;
+            user_answ_lb20.Text = "";
+
         }
 
         private void save_user_create_btn_Click(object sender, EventArgs e)
@@ -582,18 +664,13 @@ namespace dr
 
         private void test_num_user_combo_SelectedIndexChanged(object sender, EventArgs e)
         {
-            DBC.id_test(test_num_user_combo.SelectedItem.ToString());
-            DBC.test_user_answr(Convert.ToInt32(DBC.message), Convert.ToInt32(pr_cod_user_combo.SelectedItem.ToString()));
-            test_time_user_datepicker.Text = DBC.date_answer.ToString();
-            user_answ_user_box.Text = DBC.answer;
+           // DBC.id_test(test_num_user_combo.SelectedItem.ToString());
+           // DBC.test_user_answr(Convert.ToInt32(DBC.message), Convert.ToInt32(pr_cod_user_combo.SelectedItem.ToString()));
+            //test_time_user_datepicker.Text = DBC.date_answer.ToString();
+           // user_answ_user_box.Text = DBC.answer;
             test_num_user_combo.Enabled = false;
             pr_cod_user_combo.Enabled = false;
-            test_time_user_datepicker.Enabled = true;
-            user_answ_user_box.Enabled = true;
-            save_edit_user_btn.Enabled = true;
-
-
-
+            test_num_22_user_combo.Enabled = true;
 
             int j = test_num_22_user_combo.Items.Count;
             for (int i = 0; i < j; i++)
@@ -607,8 +684,10 @@ namespace dr
 
         private void save_edit_user_btn_Click(object sender, EventArgs e)
         {
-            DBC.id_test(test_num_user_combo.SelectedItem.ToString());
-            DBC.edit_tests_users(Convert.ToInt32(DBC.message), Convert.ToInt32(pr_cod_user_combo.SelectedItem.ToString()), test_time_user_datepicker.Text, user_answ_user_box.Text);
+            //DBC.id_test(test_num_user_combo.SelectedItem.ToString());
+            DBC.edit_tests_users(Convert.ToInt32(test_num_22_user_combo.SelectedItem.ToString()), test_time_user_datepicker.Text, user_answ_user_box.Text,user_answ_box1.Text,user_answ_box2.Text,user_answ_box3.Text,
+                user_answ_box4.Text,user_answ_box5.Text,user_answ_box6.Text,user_answ_box7.Text,user_answ_box8.Text,user_answ_box9.Text,user_answ_box10.Text,user_answ_box11.Text,user_answ_box12.Text, user_answ_box13.Text
+                , user_answ_box14.Text, user_answ_box15.Text, user_answ_box16.Text, user_answ_box17.Text, user_answ_box18.Text, user_answ_box19.Text, user_answ_box20.Text);
             MessageBox.Show(DBC.message);
             deisable_all();
         }
@@ -658,7 +737,9 @@ namespace dr
         private void save_edit_test_btn_Click(object sender, EventArgs e)
         {
             DBC.id_test(test_num_test_combo.SelectedItem.ToString());
-            DBC.edit_tests_users(Convert.ToInt32(DBC.message), Convert.ToInt32(pr_cod_test_combo.SelectedItem.ToString()), test_time_test_datepicker.Text, user_answ_test_box.Text);
+            DBC.edit_tests_users(Convert.ToInt32(test_num_22_test_combo.SelectedItem.ToString()), test_time_test_datepicker.Text, user_answ_test_box.Text, test_answ_box1.Text, test_answ_box2.Text, test_answ_box3.Text,
+                test_answ_box4.Text, test_answ_box5.Text, test_answ_box6.Text, test_answ_box7.Text, test_answ_box8.Text, test_answ_box9.Text, test_answ_box10.Text, test_answ_box11.Text, test_answ_box12.Text, test_answ_box13.Text
+                , test_answ_box14.Text, test_answ_box15.Text, test_answ_box16.Text, test_answ_box17.Text, test_answ_box18.Text, test_answ_box19.Text, test_answ_box20.Text);
             MessageBox.Show(DBC.message);
             deisable_all();
         }
@@ -914,169 +995,231 @@ namespace dr
         }
 
 
-        private void textBox19_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test20_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox18_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test19_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox17_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test18_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox16_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test17_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox15_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test16_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox14_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test15_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox13_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test14_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox12_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test13_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox11_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test12_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox10_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test11_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox9_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test10_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox8_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test9_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox7_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test8_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox6_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void test7_lb_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void test_num_22_user_combo_SelectedIndexChanged(object sender, EventArgs e)
         {
             DBC.id_test(test_num_user_combo.SelectedItem.ToString());
-            DBC.test_user_answr(Convert.ToInt32(DBC.message), Convert.ToInt32(pr_cod_user_combo.SelectedItem.ToString()));
+            DBC.test_name(Convert.ToInt32(DBC.message));
+            en_fild_user(DBC.no_f);
+            //qus_textbox.Text = DBC.tests_qus;
+            user_answ_lb1.Text = DBC.f1;
+            user_answ_lb2.Text = DBC.f2;
+            user_answ_lb3.Text = DBC.f3;
+            user_answ_lb4.Text = DBC.f4;
+            user_answ_lb5.Text = DBC.f5;
+            user_answ_lb6.Text = DBC.f6;
+            user_answ_lb7.Text = DBC.f7;
+            user_answ_lb8.Text = DBC.f8;
+            user_answ_lb9.Text = DBC.f9;
+            user_answ_lb10.Text = DBC.f10;
+            user_answ_lb11.Text = DBC.f11;
+            user_answ_lb12.Text = DBC.f12;
+            user_answ_lb13.Text = DBC.f13;
+            user_answ_lb14.Text = DBC.f14;
+            user_answ_lb15.Text = DBC.f15;
+            user_answ_lb16.Text = DBC.f16;
+            user_answ_lb17.Text = DBC.f17;
+            user_answ_lb18.Text = DBC.f18;
+            user_answ_lb19.Text = DBC.f19;
+            user_answ_lb20.Text = DBC.f20;
+
+            DBC.test_user_answr_id(Convert.ToInt32(test_num_22_user_combo.SelectedItem.ToString()));
+
             test_time_user_datepicker.Text = DBC.date_answer.ToString();
             user_answ_user_box.Text = DBC.answer;
+            user_answ_box1.Text = DBC.f1;
+            user_answ_box2.Text = DBC.f2;
+            user_answ_box3.Text = DBC.f3;
+            user_answ_box4.Text = DBC.f4;
+            user_answ_box5.Text = DBC.f5;
+            user_answ_box6.Text = DBC.f6;
+            user_answ_box7.Text = DBC.f7;
+            user_answ_box8.Text = DBC.f8;
+            user_answ_box9.Text = DBC.f9;
+            user_answ_box10.Text = DBC.f10;
+            user_answ_box11.Text = DBC.f11;
+            user_answ_box12.Text = DBC.f12;
+            user_answ_box13.Text = DBC.f13;
+            user_answ_box14.Text = DBC.f14;
+            user_answ_box15.Text = DBC.f15;
+            user_answ_box16.Text = DBC.f16;
+            user_answ_box17.Text = DBC.f17;
+            user_answ_box18.Text = DBC.f18;
+            user_answ_box19.Text = DBC.f19;
+            user_answ_box20.Text = DBC.f20;
             test_num_user_combo.Enabled = false;
             pr_cod_user_combo.Enabled = false;
+            test_num_22_user_combo.Enabled = false;
             test_time_user_datepicker.Enabled = true;
             user_answ_user_box.Enabled = true;
             save_edit_user_btn.Enabled = true;
         }
+        private void en_fild_user(int no_f)
+        {
+            int i = 0;
+            if (no_f > i)
+            {
+                user_answ_lb1.Visible = true;
+                user_answ_lb1.Enabled = true;
+                user_answ_box1.Visible = true;
+                user_answ_box1.Enabled = true;
+                i++;
+                if (no_f > i)
+                {
+                    user_answ_lb2.Visible = true;
+                    user_answ_lb2.Enabled = true;
+                    user_answ_box2.Visible = true;
+                    user_answ_box2.Enabled = true;
+                    i++;
+                    if (no_f > i)
+                    {
+                        user_answ_lb3.Visible = true;
+                        user_answ_lb3.Enabled = true;
+                        user_answ_box3.Visible = true;
+                        user_answ_box3.Enabled = true;
+                        i++;
+                        if (no_f > i)
+                        {
+                            user_answ_lb4.Visible = true;
+                            user_answ_lb4.Enabled = true;
+                            user_answ_box4.Visible = true;
+                            user_answ_box4.Enabled = true;
+                            i++;
+                            if (no_f > i)
+                            {
+                                user_answ_lb5.Visible = true;
+                                user_answ_lb5.Enabled = true;
+                                user_answ_box5.Visible = true;
+                                user_answ_box5.Enabled = true;
+                                i++;
+                                if (no_f > i)
+                                {
+                                    user_answ_lb6.Visible = true;
+                                    user_answ_lb6.Enabled = true;
+                                    user_answ_box6.Visible = true;
+                                    user_answ_box6.Enabled = true;
+                                    i++;
+                                    if (no_f > i)
+                                    {
+                                        user_answ_lb7.Visible = true;
+                                        user_answ_lb7.Enabled = true;
+                                        user_answ_box7.Visible = true;
+                                        user_answ_box7.Enabled = true;
+                                        i++;
+                                        if (no_f > i)
+                                        {
+                                            user_answ_lb8.Visible = true;
+                                            user_answ_lb8.Enabled = true;
+                                            user_answ_box8.Visible = true;
+                                            user_answ_box8.Enabled = true;
+                                            i++;
+                                            if (no_f > i)
+                                            {
+                                                user_answ_lb9.Visible = true;
+                                                user_answ_lb9.Enabled = true;
+                                                user_answ_box9.Visible = true;
+                                                user_answ_box9.Enabled = true;
+                                                i++;
 
+                                                if (no_f > i)
+                                                {
+                                                    user_answ_lb10.Visible = true;
+                                                    user_answ_lb10.Enabled = true;
+                                                    user_answ_box10.Visible = true;
+                                                    user_answ_box10.Enabled = true;
+                                                    i++;
+                                                    if (no_f > i)
+                                                    {
+                                                        user_answ_lb11.Visible = true;
+                                                        user_answ_lb11.Enabled = true;
+                                                        user_answ_box11.Visible = true;
+                                                        user_answ_box11.Enabled = true;
+                                                        i++;
+                                                        if (no_f > i)
+                                                        {
+                                                            user_answ_lb12.Visible = true;
+                                                            user_answ_lb12.Enabled = true;
+                                                            user_answ_box12.Visible = true;
+                                                            user_answ_box12.Enabled = true;
+                                                            i++;
+                                                            if (no_f > i)
+                                                            {
+                                                                user_answ_lb13.Visible = true;
+                                                                user_answ_lb13.Enabled = true;
+                                                                user_answ_box13.Visible = true;
+                                                                user_answ_box13.Enabled = true;
+                                                                i++;
+                                                                if (no_f > i)
+                                                                {
+                                                                    user_answ_lb14.Visible = true;
+                                                                    user_answ_lb14.Enabled = true;
+                                                                    user_answ_box14.Visible = true;
+                                                                    user_answ_box14.Enabled = true;
+                                                                    i++;
+                                                                    if (no_f > i)
+                                                                    {
+                                                                        user_answ_lb15.Visible = true;
+                                                                        user_answ_lb15.Enabled = true;
+                                                                        user_answ_box15.Visible = true;
+                                                                        user_answ_box15.Enabled = true;
+                                                                        i++;
+                                                                        if (no_f > i)
+                                                                        {
+                                                                            user_answ_lb16.Visible = true;
+                                                                            user_answ_lb16.Enabled = true;
+                                                                            user_answ_box16.Visible = true;
+                                                                            user_answ_box16.Enabled = true;
+                                                                            i++;
+                                                                            if (no_f > i)
+                                                                            {
+                                                                                user_answ_lb17.Visible = true;
+                                                                                user_answ_lb17.Enabled = true;
+                                                                                user_answ_box17.Visible = true;
+                                                                                user_answ_box17.Enabled = true;
+                                                                                i++;
+                                                                                if (no_f > i)
+                                                                                {
+                                                                                    user_answ_lb18.Visible = true;
+                                                                                    user_answ_lb18.Enabled = true;
+                                                                                    user_answ_box18.Visible = true;
+                                                                                    user_answ_box18.Enabled = true;
+                                                                                    i++;
+                                                                                    if (no_f > i)
+                                                                                    {
+                                                                                        user_answ_lb19.Visible = true;
+                                                                                        user_answ_lb19.Enabled = true;
+                                                                                        user_answ_box19.Visible = true;
+                                                                                        user_answ_box19.Enabled = true;
+                                                                                        i++;
+                                                                                        if (no_f > i)
+                                                                                        {
+                                                                                            user_answ_lb20.Visible = true;
+                                                                                            user_answ_lb20.Enabled = true;
+                                                                                            user_answ_box20.Visible = true;
+                                                                                            user_answ_box20.Enabled = true;
+                                                                                            i++;
+
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            }
+                                                                        }
+                                                                    }
+                                                                }
+                                                            }
+                                                        }
+                                                    }
+                                                }
+
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
         private void timer1_Tick(object sender, EventArgs e)
         {
             timer1.Enabled = false;
@@ -1095,6 +1238,16 @@ namespace dr
 
             File.WriteAllText("temp", "");
             test_num_22_user_combo.Enabled = true;
+        }
+
+        private void textBox36_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox39_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

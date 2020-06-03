@@ -63,6 +63,48 @@
             this.save_test_btn = new System.Windows.Forms.Button();
             this.edit_user_test_btn = new System.Windows.Forms.Button();
             this.qus_tab = new System.Windows.Forms.TabPage();
+            this.test_answ_box20 = new System.Windows.Forms.TextBox();
+            this.label21 = new System.Windows.Forms.Label();
+            this.test_answ_box19 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.test_answ_box18 = new System.Windows.Forms.TextBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.test_answ_box17 = new System.Windows.Forms.TextBox();
+            this.label24 = new System.Windows.Forms.Label();
+            this.test_answ_box16 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.test_answ_box15 = new System.Windows.Forms.TextBox();
+            this.label26 = new System.Windows.Forms.Label();
+            this.test_answ_box14 = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
+            this.test_answ_box1 = new System.Windows.Forms.TextBox();
+            this.test_answ_box13 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.label30 = new System.Windows.Forms.Label();
+            this.test_answ_box2 = new System.Windows.Forms.TextBox();
+            this.test_answ_box12 = new System.Windows.Forms.TextBox();
+            this.label31 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.test_answ_box3 = new System.Windows.Forms.TextBox();
+            this.test_answ_box11 = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.test_answ_box4 = new System.Windows.Forms.TextBox();
+            this.test_answ_box10 = new System.Windows.Forms.TextBox();
+            this.label35 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
+            this.test_answ_box5 = new System.Windows.Forms.TextBox();
+            this.test_answ_box9 = new System.Windows.Forms.TextBox();
+            this.label37 = new System.Windows.Forms.Label();
+            this.label38 = new System.Windows.Forms.Label();
+            this.test_answ_box6 = new System.Windows.Forms.TextBox();
+            this.test_answ_box8 = new System.Windows.Forms.TextBox();
+            this.label39 = new System.Windows.Forms.Label();
+            this.label40 = new System.Windows.Forms.Label();
+            this.test_answ_box7 = new System.Windows.Forms.TextBox();
+            this.test_num_22_test_combo = new System.Windows.Forms.ComboBox();
+            this.test_num_22_test_lb = new System.Windows.Forms.Label();
             this.test_time_test_datepicker = new System.Windows.Forms.DateTimePicker();
             this.pr_cod_test_combo = new System.Windows.Forms.ComboBox();
             this.save_edit_test_btn = new System.Windows.Forms.Button();
@@ -73,15 +115,57 @@
             this.test_num_test_lb = new System.Windows.Forms.Label();
             this.pr_cod_test_lb = new System.Windows.Forms.Label();
             this.uesr_tab = new System.Windows.Forms.TabPage();
+            this.user_answ_box20 = new System.Windows.Forms.TextBox();
+            this.test_num_22_user_combo = new System.Windows.Forms.ComboBox();
+            this.user_answ_lb20 = new System.Windows.Forms.Label();
+            this.test_num_22_user_lb = new System.Windows.Forms.Label();
+            this.user_answ_box19 = new System.Windows.Forms.TextBox();
             this.test_time_user_datepicker = new System.Windows.Forms.DateTimePicker();
+            this.user_answ_lb19 = new System.Windows.Forms.Label();
             this.pr_cod_user_combo = new System.Windows.Forms.ComboBox();
+            this.user_answ_box18 = new System.Windows.Forms.TextBox();
             this.save_edit_user_btn = new System.Windows.Forms.Button();
+            this.user_answ_lb18 = new System.Windows.Forms.Label();
             this.user_answ_user_box = new System.Windows.Forms.TextBox();
+            this.user_answ_box17 = new System.Windows.Forms.TextBox();
             this.user_answ_user_lb = new System.Windows.Forms.Label();
+            this.user_answ_lb17 = new System.Windows.Forms.Label();
             this.time_test_user_lb = new System.Windows.Forms.Label();
+            this.user_answ_box16 = new System.Windows.Forms.TextBox();
             this.test_num_user_combo = new System.Windows.Forms.ComboBox();
+            this.user_answ_lb16 = new System.Windows.Forms.Label();
             this.test_num_user_lb = new System.Windows.Forms.Label();
+            this.user_answ_box15 = new System.Windows.Forms.TextBox();
+            this.user_answ_lb15 = new System.Windows.Forms.Label();
             this.pr_cod_user_lb = new System.Windows.Forms.Label();
+            this.user_answ_box14 = new System.Windows.Forms.TextBox();
+            this.user_answ_lb1 = new System.Windows.Forms.Label();
+            this.user_answ_lb14 = new System.Windows.Forms.Label();
+            this.user_answ_box1 = new System.Windows.Forms.TextBox();
+            this.user_answ_box13 = new System.Windows.Forms.TextBox();
+            this.user_answ_lb2 = new System.Windows.Forms.Label();
+            this.user_answ_lb13 = new System.Windows.Forms.Label();
+            this.user_answ_box2 = new System.Windows.Forms.TextBox();
+            this.user_answ_box12 = new System.Windows.Forms.TextBox();
+            this.user_answ_lb3 = new System.Windows.Forms.Label();
+            this.user_answ_lb12 = new System.Windows.Forms.Label();
+            this.user_answ_box3 = new System.Windows.Forms.TextBox();
+            this.user_answ_box11 = new System.Windows.Forms.TextBox();
+            this.user_answ_lb4 = new System.Windows.Forms.Label();
+            this.user_answ_lb11 = new System.Windows.Forms.Label();
+            this.user_answ_box4 = new System.Windows.Forms.TextBox();
+            this.user_answ_box10 = new System.Windows.Forms.TextBox();
+            this.user_answ_lb5 = new System.Windows.Forms.Label();
+            this.user_answ_lb10 = new System.Windows.Forms.Label();
+            this.user_answ_box5 = new System.Windows.Forms.TextBox();
+            this.user_answ_box9 = new System.Windows.Forms.TextBox();
+            this.user_answ_lb6 = new System.Windows.Forms.Label();
+            this.user_answ_lb9 = new System.Windows.Forms.Label();
+            this.user_answ_box6 = new System.Windows.Forms.TextBox();
+            this.user_answ_box8 = new System.Windows.Forms.TextBox();
+            this.user_answ_lb7 = new System.Windows.Forms.Label();
+            this.user_answ_lb8 = new System.Windows.Forms.Label();
+            this.user_answ_box7 = new System.Windows.Forms.TextBox();
             this.edit_qus_user_tab = new System.Windows.Forms.TabControl();
             this.timer_get_test_user = new System.Windows.Forms.Timer(this.components);
             this.timer_get_user_test = new System.Windows.Forms.Timer(this.components);
@@ -147,10 +231,6 @@
             this.test1_lb = new System.Windows.Forms.Label();
             this.test_text_box = new System.Windows.Forms.TextBox();
             this.numericUpDown1 = new System.Windows.Forms.NumericUpDown();
-            this.test_num_22_user_lb = new System.Windows.Forms.Label();
-            this.test_num_22_user_combo = new System.Windows.Forms.ComboBox();
-            this.test_num_22_test_combo = new System.Windows.Forms.ComboBox();
-            this.test_num_22_test_lb = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.qus_tab.SuspendLayout();
             this.uesr_tab.SuspendLayout();
@@ -484,6 +564,46 @@
             // qus_tab
             // 
             this.qus_tab.BackColor = System.Drawing.SystemColors.Control;
+            this.qus_tab.Controls.Add(this.test_answ_box20);
+            this.qus_tab.Controls.Add(this.label21);
+            this.qus_tab.Controls.Add(this.test_answ_box19);
+            this.qus_tab.Controls.Add(this.label22);
+            this.qus_tab.Controls.Add(this.test_answ_box18);
+            this.qus_tab.Controls.Add(this.label23);
+            this.qus_tab.Controls.Add(this.test_answ_box17);
+            this.qus_tab.Controls.Add(this.label24);
+            this.qus_tab.Controls.Add(this.test_answ_box16);
+            this.qus_tab.Controls.Add(this.label25);
+            this.qus_tab.Controls.Add(this.test_answ_box15);
+            this.qus_tab.Controls.Add(this.label26);
+            this.qus_tab.Controls.Add(this.test_answ_box14);
+            this.qus_tab.Controls.Add(this.label27);
+            this.qus_tab.Controls.Add(this.label28);
+            this.qus_tab.Controls.Add(this.test_answ_box1);
+            this.qus_tab.Controls.Add(this.test_answ_box13);
+            this.qus_tab.Controls.Add(this.label29);
+            this.qus_tab.Controls.Add(this.label30);
+            this.qus_tab.Controls.Add(this.test_answ_box2);
+            this.qus_tab.Controls.Add(this.test_answ_box12);
+            this.qus_tab.Controls.Add(this.label31);
+            this.qus_tab.Controls.Add(this.label32);
+            this.qus_tab.Controls.Add(this.test_answ_box3);
+            this.qus_tab.Controls.Add(this.test_answ_box11);
+            this.qus_tab.Controls.Add(this.label33);
+            this.qus_tab.Controls.Add(this.label34);
+            this.qus_tab.Controls.Add(this.test_answ_box4);
+            this.qus_tab.Controls.Add(this.test_answ_box10);
+            this.qus_tab.Controls.Add(this.label35);
+            this.qus_tab.Controls.Add(this.label36);
+            this.qus_tab.Controls.Add(this.test_answ_box5);
+            this.qus_tab.Controls.Add(this.test_answ_box9);
+            this.qus_tab.Controls.Add(this.label37);
+            this.qus_tab.Controls.Add(this.label38);
+            this.qus_tab.Controls.Add(this.test_answ_box6);
+            this.qus_tab.Controls.Add(this.test_answ_box8);
+            this.qus_tab.Controls.Add(this.label39);
+            this.qus_tab.Controls.Add(this.label40);
+            this.qus_tab.Controls.Add(this.test_answ_box7);
             this.qus_tab.Controls.Add(this.test_num_22_test_combo);
             this.qus_tab.Controls.Add(this.test_num_22_test_lb);
             this.qus_tab.Controls.Add(this.test_time_test_datepicker);
@@ -498,10 +618,430 @@
             this.qus_tab.Location = new System.Drawing.Point(4, 22);
             this.qus_tab.Name = "qus_tab";
             this.qus_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.qus_tab.Size = new System.Drawing.Size(192, 333);
+            this.qus_tab.Size = new System.Drawing.Size(192, 458);
             this.qus_tab.TabIndex = 1;
             this.qus_tab.Text = "تست";
             this.qus_tab.Click += new System.EventHandler(this.qus_tab_Click);
+            // 
+            // test_answ_box20
+            // 
+            this.test_answ_box20.Enabled = false;
+            this.test_answ_box20.Location = new System.Drawing.Point(4, 373);
+            this.test_answ_box20.Name = "test_answ_box20";
+            this.test_answ_box20.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box20.TabIndex = 243;
+            this.test_answ_box20.Visible = false;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Enabled = false;
+            this.label21.Location = new System.Drawing.Point(40, 376);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(60, 13);
+            this.label21.TabIndex = 242;
+            this.label21.Text = ":TEST #20";
+            this.label21.Visible = false;
+            // 
+            // test_answ_box19
+            // 
+            this.test_answ_box19.Enabled = false;
+            this.test_answ_box19.Location = new System.Drawing.Point(100, 373);
+            this.test_answ_box19.Name = "test_answ_box19";
+            this.test_answ_box19.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box19.TabIndex = 241;
+            this.test_answ_box19.Visible = false;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Enabled = false;
+            this.label22.Location = new System.Drawing.Point(135, 376);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(60, 13);
+            this.label22.TabIndex = 240;
+            this.label22.Text = ":TEST #19";
+            this.label22.Visible = false;
+            // 
+            // test_answ_box18
+            // 
+            this.test_answ_box18.Enabled = false;
+            this.test_answ_box18.Location = new System.Drawing.Point(4, 352);
+            this.test_answ_box18.Name = "test_answ_box18";
+            this.test_answ_box18.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box18.TabIndex = 239;
+            this.test_answ_box18.Visible = false;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Enabled = false;
+            this.label23.Location = new System.Drawing.Point(39, 355);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(60, 13);
+            this.label23.TabIndex = 238;
+            this.label23.Text = ":TEST #18";
+            this.label23.Visible = false;
+            // 
+            // test_answ_box17
+            // 
+            this.test_answ_box17.Enabled = false;
+            this.test_answ_box17.Location = new System.Drawing.Point(100, 352);
+            this.test_answ_box17.Name = "test_answ_box17";
+            this.test_answ_box17.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box17.TabIndex = 237;
+            this.test_answ_box17.Visible = false;
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Enabled = false;
+            this.label24.Location = new System.Drawing.Point(135, 355);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(60, 13);
+            this.label24.TabIndex = 236;
+            this.label24.Text = ":TEST #17";
+            this.label24.Visible = false;
+            // 
+            // test_answ_box16
+            // 
+            this.test_answ_box16.Enabled = false;
+            this.test_answ_box16.Location = new System.Drawing.Point(4, 331);
+            this.test_answ_box16.Name = "test_answ_box16";
+            this.test_answ_box16.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box16.TabIndex = 235;
+            this.test_answ_box16.Visible = false;
+            // 
+            // label25
+            // 
+            this.label25.AutoSize = true;
+            this.label25.Enabled = false;
+            this.label25.Location = new System.Drawing.Point(40, 334);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(60, 13);
+            this.label25.TabIndex = 234;
+            this.label25.Text = ":TEST #16";
+            this.label25.Visible = false;
+            // 
+            // test_answ_box15
+            // 
+            this.test_answ_box15.Enabled = false;
+            this.test_answ_box15.Location = new System.Drawing.Point(100, 331);
+            this.test_answ_box15.Name = "test_answ_box15";
+            this.test_answ_box15.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box15.TabIndex = 233;
+            this.test_answ_box15.Visible = false;
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Enabled = false;
+            this.label26.Location = new System.Drawing.Point(135, 334);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(60, 13);
+            this.label26.TabIndex = 232;
+            this.label26.Text = ":TEST #15";
+            this.label26.Visible = false;
+            // 
+            // test_answ_box14
+            // 
+            this.test_answ_box14.Enabled = false;
+            this.test_answ_box14.Location = new System.Drawing.Point(4, 310);
+            this.test_answ_box14.Name = "test_answ_box14";
+            this.test_answ_box14.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box14.TabIndex = 231;
+            this.test_answ_box14.Visible = false;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Enabled = false;
+            this.label27.Location = new System.Drawing.Point(135, 186);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(54, 13);
+            this.label27.TabIndex = 204;
+            this.label27.Text = ":TEST #1";
+            // 
+            // label28
+            // 
+            this.label28.AutoSize = true;
+            this.label28.Enabled = false;
+            this.label28.Location = new System.Drawing.Point(40, 313);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(60, 13);
+            this.label28.TabIndex = 230;
+            this.label28.Text = ":TEST #14";
+            this.label28.Visible = false;
+            // 
+            // test_answ_box1
+            // 
+            this.test_answ_box1.Enabled = false;
+            this.test_answ_box1.Location = new System.Drawing.Point(100, 183);
+            this.test_answ_box1.Name = "test_answ_box1";
+            this.test_answ_box1.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box1.TabIndex = 205;
+            // 
+            // test_answ_box13
+            // 
+            this.test_answ_box13.Enabled = false;
+            this.test_answ_box13.Location = new System.Drawing.Point(100, 310);
+            this.test_answ_box13.Name = "test_answ_box13";
+            this.test_answ_box13.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box13.TabIndex = 229;
+            this.test_answ_box13.Visible = false;
+            // 
+            // label29
+            // 
+            this.label29.AutoSize = true;
+            this.label29.Enabled = false;
+            this.label29.Location = new System.Drawing.Point(40, 186);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(54, 13);
+            this.label29.TabIndex = 206;
+            this.label29.Text = ":TEST #2";
+            this.label29.Visible = false;
+            // 
+            // label30
+            // 
+            this.label30.AutoSize = true;
+            this.label30.Enabled = false;
+            this.label30.Location = new System.Drawing.Point(135, 313);
+            this.label30.Name = "label30";
+            this.label30.Size = new System.Drawing.Size(60, 13);
+            this.label30.TabIndex = 228;
+            this.label30.Text = ":TEST #13";
+            this.label30.Visible = false;
+            // 
+            // test_answ_box2
+            // 
+            this.test_answ_box2.Enabled = false;
+            this.test_answ_box2.Location = new System.Drawing.Point(4, 183);
+            this.test_answ_box2.Name = "test_answ_box2";
+            this.test_answ_box2.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box2.TabIndex = 207;
+            this.test_answ_box2.Visible = false;
+            // 
+            // test_answ_box12
+            // 
+            this.test_answ_box12.Enabled = false;
+            this.test_answ_box12.Location = new System.Drawing.Point(4, 288);
+            this.test_answ_box12.Name = "test_answ_box12";
+            this.test_answ_box12.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box12.TabIndex = 227;
+            this.test_answ_box12.Visible = false;
+            // 
+            // label31
+            // 
+            this.label31.AutoSize = true;
+            this.label31.Enabled = false;
+            this.label31.Location = new System.Drawing.Point(135, 209);
+            this.label31.Name = "label31";
+            this.label31.Size = new System.Drawing.Size(54, 13);
+            this.label31.TabIndex = 208;
+            this.label31.Text = ":TEST #3";
+            this.label31.Visible = false;
+            // 
+            // label32
+            // 
+            this.label32.AutoSize = true;
+            this.label32.Enabled = false;
+            this.label32.Location = new System.Drawing.Point(39, 291);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(60, 13);
+            this.label32.TabIndex = 226;
+            this.label32.Text = ":TEST #12";
+            this.label32.Visible = false;
+            // 
+            // test_answ_box3
+            // 
+            this.test_answ_box3.Enabled = false;
+            this.test_answ_box3.Location = new System.Drawing.Point(100, 204);
+            this.test_answ_box3.Name = "test_answ_box3";
+            this.test_answ_box3.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box3.TabIndex = 209;
+            this.test_answ_box3.Visible = false;
+            // 
+            // test_answ_box11
+            // 
+            this.test_answ_box11.Enabled = false;
+            this.test_answ_box11.Location = new System.Drawing.Point(100, 288);
+            this.test_answ_box11.Name = "test_answ_box11";
+            this.test_answ_box11.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box11.TabIndex = 225;
+            this.test_answ_box11.Visible = false;
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Enabled = false;
+            this.label33.Location = new System.Drawing.Point(40, 207);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(54, 13);
+            this.label33.TabIndex = 210;
+            this.label33.Text = ":TEST #4";
+            this.label33.Visible = false;
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Enabled = false;
+            this.label34.Location = new System.Drawing.Point(135, 291);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(60, 13);
+            this.label34.TabIndex = 224;
+            this.label34.Text = ":TEST #11";
+            this.label34.Visible = false;
+            // 
+            // test_answ_box4
+            // 
+            this.test_answ_box4.Enabled = false;
+            this.test_answ_box4.Location = new System.Drawing.Point(4, 204);
+            this.test_answ_box4.Name = "test_answ_box4";
+            this.test_answ_box4.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box4.TabIndex = 211;
+            this.test_answ_box4.Visible = false;
+            // 
+            // test_answ_box10
+            // 
+            this.test_answ_box10.Enabled = false;
+            this.test_answ_box10.Location = new System.Drawing.Point(4, 267);
+            this.test_answ_box10.Name = "test_answ_box10";
+            this.test_answ_box10.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box10.TabIndex = 223;
+            this.test_answ_box10.Visible = false;
+            // 
+            // label35
+            // 
+            this.label35.AutoSize = true;
+            this.label35.Enabled = false;
+            this.label35.Location = new System.Drawing.Point(135, 228);
+            this.label35.Name = "label35";
+            this.label35.Size = new System.Drawing.Size(54, 13);
+            this.label35.TabIndex = 212;
+            this.label35.Text = ":TEST #5";
+            this.label35.Visible = false;
+            // 
+            // label36
+            // 
+            this.label36.AutoSize = true;
+            this.label36.Enabled = false;
+            this.label36.Location = new System.Drawing.Point(40, 270);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(60, 13);
+            this.label36.TabIndex = 222;
+            this.label36.Text = ":TEST #10";
+            this.label36.Visible = false;
+            // 
+            // test_answ_box5
+            // 
+            this.test_answ_box5.Enabled = false;
+            this.test_answ_box5.Location = new System.Drawing.Point(100, 225);
+            this.test_answ_box5.Name = "test_answ_box5";
+            this.test_answ_box5.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box5.TabIndex = 213;
+            this.test_answ_box5.Visible = false;
+            this.test_answ_box5.TextChanged += new System.EventHandler(this.textBox36_TextChanged);
+            // 
+            // test_answ_box9
+            // 
+            this.test_answ_box9.Enabled = false;
+            this.test_answ_box9.Location = new System.Drawing.Point(100, 267);
+            this.test_answ_box9.Name = "test_answ_box9";
+            this.test_answ_box9.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box9.TabIndex = 221;
+            this.test_answ_box9.Visible = false;
+            // 
+            // label37
+            // 
+            this.label37.AutoSize = true;
+            this.label37.Enabled = false;
+            this.label37.Location = new System.Drawing.Point(39, 228);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(54, 13);
+            this.label37.TabIndex = 214;
+            this.label37.Text = ":TEST #6";
+            this.label37.Visible = false;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Enabled = false;
+            this.label38.Location = new System.Drawing.Point(135, 270);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(54, 13);
+            this.label38.TabIndex = 220;
+            this.label38.Text = ":TEST #9";
+            this.label38.Visible = false;
+            // 
+            // test_answ_box6
+            // 
+            this.test_answ_box6.Enabled = false;
+            this.test_answ_box6.Location = new System.Drawing.Point(4, 225);
+            this.test_answ_box6.Name = "test_answ_box6";
+            this.test_answ_box6.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box6.TabIndex = 215;
+            this.test_answ_box6.Visible = false;
+            // 
+            // test_answ_box8
+            // 
+            this.test_answ_box8.Enabled = false;
+            this.test_answ_box8.Location = new System.Drawing.Point(4, 246);
+            this.test_answ_box8.Name = "test_answ_box8";
+            this.test_answ_box8.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box8.TabIndex = 219;
+            this.test_answ_box8.Visible = false;
+            this.test_answ_box8.TextChanged += new System.EventHandler(this.textBox39_TextChanged);
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Enabled = false;
+            this.label39.Location = new System.Drawing.Point(135, 249);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(54, 13);
+            this.label39.TabIndex = 216;
+            this.label39.Text = ":TEST #7";
+            this.label39.Visible = false;
+            // 
+            // label40
+            // 
+            this.label40.AutoSize = true;
+            this.label40.Enabled = false;
+            this.label40.Location = new System.Drawing.Point(40, 249);
+            this.label40.Name = "label40";
+            this.label40.Size = new System.Drawing.Size(54, 13);
+            this.label40.TabIndex = 218;
+            this.label40.Text = ":TEST #8";
+            this.label40.Visible = false;
+            // 
+            // test_answ_box7
+            // 
+            this.test_answ_box7.Enabled = false;
+            this.test_answ_box7.Location = new System.Drawing.Point(100, 246);
+            this.test_answ_box7.Name = "test_answ_box7";
+            this.test_answ_box7.Size = new System.Drawing.Size(36, 20);
+            this.test_answ_box7.TabIndex = 217;
+            this.test_answ_box7.Visible = false;
+            // 
+            // test_num_22_test_combo
+            // 
+            this.test_num_22_test_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.test_num_22_test_combo.FormattingEnabled = true;
+            this.test_num_22_test_combo.Location = new System.Drawing.Point(6, 58);
+            this.test_num_22_test_combo.Name = "test_num_22_test_combo";
+            this.test_num_22_test_combo.Size = new System.Drawing.Size(121, 21);
+            this.test_num_22_test_combo.TabIndex = 47;
+            //this.test_num_22_test_combo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // test_num_22_test_lb
+            // 
+            this.test_num_22_test_lb.AutoSize = true;
+            this.test_num_22_test_lb.Location = new System.Drawing.Point(130, 61);
+            this.test_num_22_test_lb.Name = "test_num_22_test_lb";
+            this.test_num_22_test_lb.Size = new System.Drawing.Size(39, 13);
+            this.test_num_22_test_lb.TabIndex = 46;
+            this.test_num_22_test_lb.Text = ":شماره";
+            //this.test_num_22_test_lb.Click += new System.EventHandler(this.label1_Click);
             // 
             // test_time_test_datepicker
             // 
@@ -527,7 +1067,7 @@
             // 
             // save_edit_test_btn
             // 
-            this.save_edit_test_btn.Location = new System.Drawing.Point(52, 307);
+            this.save_edit_test_btn.Location = new System.Drawing.Point(52, 429);
             this.save_edit_test_btn.Name = "save_edit_test_btn";
             this.save_edit_test_btn.Size = new System.Drawing.Size(75, 23);
             this.save_edit_test_btn.TabIndex = 43;
@@ -592,24 +1132,112 @@
             // uesr_tab
             // 
             this.uesr_tab.BackColor = System.Drawing.SystemColors.Control;
+            this.uesr_tab.Controls.Add(this.user_answ_box20);
             this.uesr_tab.Controls.Add(this.test_num_22_user_combo);
+            this.uesr_tab.Controls.Add(this.user_answ_lb20);
             this.uesr_tab.Controls.Add(this.test_num_22_user_lb);
+            this.uesr_tab.Controls.Add(this.user_answ_box19);
             this.uesr_tab.Controls.Add(this.test_time_user_datepicker);
+            this.uesr_tab.Controls.Add(this.user_answ_lb19);
             this.uesr_tab.Controls.Add(this.pr_cod_user_combo);
+            this.uesr_tab.Controls.Add(this.user_answ_box18);
             this.uesr_tab.Controls.Add(this.save_edit_user_btn);
+            this.uesr_tab.Controls.Add(this.user_answ_lb18);
             this.uesr_tab.Controls.Add(this.user_answ_user_box);
+            this.uesr_tab.Controls.Add(this.user_answ_box17);
             this.uesr_tab.Controls.Add(this.user_answ_user_lb);
+            this.uesr_tab.Controls.Add(this.user_answ_lb17);
             this.uesr_tab.Controls.Add(this.time_test_user_lb);
+            this.uesr_tab.Controls.Add(this.user_answ_box16);
             this.uesr_tab.Controls.Add(this.test_num_user_combo);
+            this.uesr_tab.Controls.Add(this.user_answ_lb16);
             this.uesr_tab.Controls.Add(this.test_num_user_lb);
+            this.uesr_tab.Controls.Add(this.user_answ_box15);
+            this.uesr_tab.Controls.Add(this.user_answ_lb15);
             this.uesr_tab.Controls.Add(this.pr_cod_user_lb);
+            this.uesr_tab.Controls.Add(this.user_answ_box14);
+            this.uesr_tab.Controls.Add(this.user_answ_lb1);
+            this.uesr_tab.Controls.Add(this.user_answ_lb14);
+            this.uesr_tab.Controls.Add(this.user_answ_box1);
+            this.uesr_tab.Controls.Add(this.user_answ_box13);
+            this.uesr_tab.Controls.Add(this.user_answ_lb2);
+            this.uesr_tab.Controls.Add(this.user_answ_lb13);
+            this.uesr_tab.Controls.Add(this.user_answ_box2);
+            this.uesr_tab.Controls.Add(this.user_answ_box12);
+            this.uesr_tab.Controls.Add(this.user_answ_lb3);
+            this.uesr_tab.Controls.Add(this.user_answ_lb12);
+            this.uesr_tab.Controls.Add(this.user_answ_box3);
+            this.uesr_tab.Controls.Add(this.user_answ_box11);
+            this.uesr_tab.Controls.Add(this.user_answ_lb4);
+            this.uesr_tab.Controls.Add(this.user_answ_lb11);
+            this.uesr_tab.Controls.Add(this.user_answ_box4);
+            this.uesr_tab.Controls.Add(this.user_answ_box10);
+            this.uesr_tab.Controls.Add(this.user_answ_lb5);
+            this.uesr_tab.Controls.Add(this.user_answ_lb10);
+            this.uesr_tab.Controls.Add(this.user_answ_box5);
+            this.uesr_tab.Controls.Add(this.user_answ_box9);
+            this.uesr_tab.Controls.Add(this.user_answ_lb6);
+            this.uesr_tab.Controls.Add(this.user_answ_lb9);
+            this.uesr_tab.Controls.Add(this.user_answ_box6);
+            this.uesr_tab.Controls.Add(this.user_answ_box8);
+            this.uesr_tab.Controls.Add(this.user_answ_lb7);
+            this.uesr_tab.Controls.Add(this.user_answ_lb8);
+            this.uesr_tab.Controls.Add(this.user_answ_box7);
             this.uesr_tab.Location = new System.Drawing.Point(4, 22);
             this.uesr_tab.Name = "uesr_tab";
             this.uesr_tab.Padding = new System.Windows.Forms.Padding(3);
-            this.uesr_tab.Size = new System.Drawing.Size(192, 333);
+            this.uesr_tab.Size = new System.Drawing.Size(192, 458);
             this.uesr_tab.TabIndex = 0;
             this.uesr_tab.Text = "کاربر";
             this.uesr_tab.Click += new System.EventHandler(this.uesr_tab_Click);
+            // 
+            // user_answ_box20
+            // 
+            this.user_answ_box20.Enabled = false;
+            this.user_answ_box20.Location = new System.Drawing.Point(4, 378);
+            this.user_answ_box20.Name = "user_answ_box20";
+            this.user_answ_box20.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box20.TabIndex = 203;
+            this.user_answ_box20.Visible = false;
+            // 
+            // test_num_22_user_combo
+            // 
+            this.test_num_22_user_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.test_num_22_user_combo.FormattingEnabled = true;
+            this.test_num_22_user_combo.Location = new System.Drawing.Point(6, 62);
+            this.test_num_22_user_combo.Name = "test_num_22_user_combo";
+            this.test_num_22_user_combo.Size = new System.Drawing.Size(121, 21);
+            this.test_num_22_user_combo.TabIndex = 13;
+            this.test_num_22_user_combo.SelectedIndexChanged += new System.EventHandler(this.test_num_22_user_combo_SelectedIndexChanged);
+            // 
+            // user_answ_lb20
+            // 
+            this.user_answ_lb20.AutoSize = true;
+            this.user_answ_lb20.Enabled = false;
+            this.user_answ_lb20.Location = new System.Drawing.Point(40, 381);
+            this.user_answ_lb20.Name = "user_answ_lb20";
+            this.user_answ_lb20.Size = new System.Drawing.Size(60, 13);
+            this.user_answ_lb20.TabIndex = 202;
+            this.user_answ_lb20.Text = ":TEST #20";
+            this.user_answ_lb20.Visible = false;
+            // 
+            // test_num_22_user_lb
+            // 
+            this.test_num_22_user_lb.AutoSize = true;
+            this.test_num_22_user_lb.Location = new System.Drawing.Point(130, 65);
+            this.test_num_22_user_lb.Name = "test_num_22_user_lb";
+            this.test_num_22_user_lb.Size = new System.Drawing.Size(39, 13);
+            this.test_num_22_user_lb.TabIndex = 12;
+            this.test_num_22_user_lb.Text = ":شماره";
+            // 
+            // user_answ_box19
+            // 
+            this.user_answ_box19.Enabled = false;
+            this.user_answ_box19.Location = new System.Drawing.Point(100, 378);
+            this.user_answ_box19.Name = "user_answ_box19";
+            this.user_answ_box19.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box19.TabIndex = 201;
+            this.user_answ_box19.Visible = false;
             // 
             // test_time_user_datepicker
             // 
@@ -621,6 +1249,17 @@
             this.test_time_user_datepicker.TabIndex = 11;
             this.test_time_user_datepicker.Value = new System.DateTime(2020, 5, 23, 19, 8, 0, 0);
             // 
+            // user_answ_lb19
+            // 
+            this.user_answ_lb19.AutoSize = true;
+            this.user_answ_lb19.Enabled = false;
+            this.user_answ_lb19.Location = new System.Drawing.Point(135, 381);
+            this.user_answ_lb19.Name = "user_answ_lb19";
+            this.user_answ_lb19.Size = new System.Drawing.Size(60, 13);
+            this.user_answ_lb19.TabIndex = 200;
+            this.user_answ_lb19.Text = ":TEST #19";
+            this.user_answ_lb19.Visible = false;
+            // 
             // pr_cod_user_combo
             // 
             this.pr_cod_user_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -631,15 +1270,35 @@
             this.pr_cod_user_combo.TabIndex = 9;
             this.pr_cod_user_combo.SelectedIndexChanged += new System.EventHandler(this.pr_cod_user_combo_SelectedIndexChanged);
             // 
+            // user_answ_box18
+            // 
+            this.user_answ_box18.Enabled = false;
+            this.user_answ_box18.Location = new System.Drawing.Point(4, 357);
+            this.user_answ_box18.Name = "user_answ_box18";
+            this.user_answ_box18.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box18.TabIndex = 199;
+            this.user_answ_box18.Visible = false;
+            // 
             // save_edit_user_btn
             // 
-            this.save_edit_user_btn.Location = new System.Drawing.Point(52, 304);
+            this.save_edit_user_btn.Location = new System.Drawing.Point(52, 429);
             this.save_edit_user_btn.Name = "save_edit_user_btn";
             this.save_edit_user_btn.Size = new System.Drawing.Size(75, 23);
             this.save_edit_user_btn.TabIndex = 8;
             this.save_edit_user_btn.Text = "تایید ویرایش";
             this.save_edit_user_btn.UseVisualStyleBackColor = true;
             this.save_edit_user_btn.Click += new System.EventHandler(this.save_edit_user_btn_Click);
+            // 
+            // user_answ_lb18
+            // 
+            this.user_answ_lb18.AutoSize = true;
+            this.user_answ_lb18.Enabled = false;
+            this.user_answ_lb18.Location = new System.Drawing.Point(39, 360);
+            this.user_answ_lb18.Name = "user_answ_lb18";
+            this.user_answ_lb18.Size = new System.Drawing.Size(60, 13);
+            this.user_answ_lb18.TabIndex = 198;
+            this.user_answ_lb18.Text = ":TEST #18";
+            this.user_answ_lb18.Visible = false;
             // 
             // user_answ_user_box
             // 
@@ -650,6 +1309,15 @@
             this.user_answ_user_box.Size = new System.Drawing.Size(178, 36);
             this.user_answ_user_box.TabIndex = 7;
             // 
+            // user_answ_box17
+            // 
+            this.user_answ_box17.Enabled = false;
+            this.user_answ_box17.Location = new System.Drawing.Point(100, 357);
+            this.user_answ_box17.Name = "user_answ_box17";
+            this.user_answ_box17.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box17.TabIndex = 197;
+            this.user_answ_box17.Visible = false;
+            // 
             // user_answ_user_lb
             // 
             this.user_answ_user_lb.AutoSize = true;
@@ -659,6 +1327,17 @@
             this.user_answ_user_lb.TabIndex = 6;
             this.user_answ_user_lb.Text = ":توضیحات";
             // 
+            // user_answ_lb17
+            // 
+            this.user_answ_lb17.AutoSize = true;
+            this.user_answ_lb17.Enabled = false;
+            this.user_answ_lb17.Location = new System.Drawing.Point(135, 360);
+            this.user_answ_lb17.Name = "user_answ_lb17";
+            this.user_answ_lb17.Size = new System.Drawing.Size(60, 13);
+            this.user_answ_lb17.TabIndex = 196;
+            this.user_answ_lb17.Text = ":TEST #17";
+            this.user_answ_lb17.Visible = false;
+            // 
             // time_test_user_lb
             // 
             this.time_test_user_lb.AutoSize = true;
@@ -667,6 +1346,15 @@
             this.time_test_user_lb.Size = new System.Drawing.Size(55, 13);
             this.time_test_user_lb.TabIndex = 5;
             this.time_test_user_lb.Text = ":زمان تست";
+            // 
+            // user_answ_box16
+            // 
+            this.user_answ_box16.Enabled = false;
+            this.user_answ_box16.Location = new System.Drawing.Point(4, 336);
+            this.user_answ_box16.Name = "user_answ_box16";
+            this.user_answ_box16.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box16.TabIndex = 195;
+            this.user_answ_box16.Visible = false;
             // 
             // test_num_user_combo
             // 
@@ -678,6 +1366,17 @@
             this.test_num_user_combo.TabIndex = 3;
             this.test_num_user_combo.SelectedIndexChanged += new System.EventHandler(this.test_num_user_combo_SelectedIndexChanged);
             // 
+            // user_answ_lb16
+            // 
+            this.user_answ_lb16.AutoSize = true;
+            this.user_answ_lb16.Enabled = false;
+            this.user_answ_lb16.Location = new System.Drawing.Point(40, 339);
+            this.user_answ_lb16.Name = "user_answ_lb16";
+            this.user_answ_lb16.Size = new System.Drawing.Size(60, 13);
+            this.user_answ_lb16.TabIndex = 194;
+            this.user_answ_lb16.Text = ":TEST #16";
+            this.user_answ_lb16.Visible = false;
+            // 
             // test_num_user_lb
             // 
             this.test_num_user_lb.AutoSize = true;
@@ -686,6 +1385,26 @@
             this.test_num_user_lb.Size = new System.Drawing.Size(31, 13);
             this.test_num_user_lb.TabIndex = 2;
             this.test_num_user_lb.Text = ":تست";
+            // 
+            // user_answ_box15
+            // 
+            this.user_answ_box15.Enabled = false;
+            this.user_answ_box15.Location = new System.Drawing.Point(100, 336);
+            this.user_answ_box15.Name = "user_answ_box15";
+            this.user_answ_box15.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box15.TabIndex = 193;
+            this.user_answ_box15.Visible = false;
+            // 
+            // user_answ_lb15
+            // 
+            this.user_answ_lb15.AutoSize = true;
+            this.user_answ_lb15.Enabled = false;
+            this.user_answ_lb15.Location = new System.Drawing.Point(135, 339);
+            this.user_answ_lb15.Name = "user_answ_lb15";
+            this.user_answ_lb15.Size = new System.Drawing.Size(60, 13);
+            this.user_answ_lb15.TabIndex = 192;
+            this.user_answ_lb15.Text = ":TEST #15";
+            this.user_answ_lb15.Visible = false;
             // 
             // pr_cod_user_lb
             // 
@@ -696,6 +1415,284 @@
             this.pr_cod_user_lb.TabIndex = 0;
             this.pr_cod_user_lb.Text = ":کد پرسنل";
             // 
+            // user_answ_box14
+            // 
+            this.user_answ_box14.Enabled = false;
+            this.user_answ_box14.Location = new System.Drawing.Point(4, 315);
+            this.user_answ_box14.Name = "user_answ_box14";
+            this.user_answ_box14.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box14.TabIndex = 191;
+            this.user_answ_box14.Visible = false;
+            // 
+            // user_answ_lb1
+            // 
+            this.user_answ_lb1.AutoSize = true;
+            this.user_answ_lb1.Enabled = false;
+            this.user_answ_lb1.Location = new System.Drawing.Point(135, 191);
+            this.user_answ_lb1.Name = "user_answ_lb1";
+            this.user_answ_lb1.Size = new System.Drawing.Size(54, 13);
+            this.user_answ_lb1.TabIndex = 164;
+            this.user_answ_lb1.Text = ":TEST #1";
+            // 
+            // user_answ_lb14
+            // 
+            this.user_answ_lb14.AutoSize = true;
+            this.user_answ_lb14.Enabled = false;
+            this.user_answ_lb14.Location = new System.Drawing.Point(40, 318);
+            this.user_answ_lb14.Name = "user_answ_lb14";
+            this.user_answ_lb14.Size = new System.Drawing.Size(60, 13);
+            this.user_answ_lb14.TabIndex = 190;
+            this.user_answ_lb14.Text = ":TEST #14";
+            this.user_answ_lb14.Visible = false;
+            // 
+            // user_answ_box1
+            // 
+            this.user_answ_box1.Enabled = false;
+            this.user_answ_box1.Location = new System.Drawing.Point(100, 188);
+            this.user_answ_box1.Name = "user_answ_box1";
+            this.user_answ_box1.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box1.TabIndex = 165;
+            // 
+            // user_answ_box13
+            // 
+            this.user_answ_box13.Enabled = false;
+            this.user_answ_box13.Location = new System.Drawing.Point(100, 315);
+            this.user_answ_box13.Name = "user_answ_box13";
+            this.user_answ_box13.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box13.TabIndex = 189;
+            this.user_answ_box13.Visible = false;
+            // 
+            // user_answ_lb2
+            // 
+            this.user_answ_lb2.AutoSize = true;
+            this.user_answ_lb2.Enabled = false;
+            this.user_answ_lb2.Location = new System.Drawing.Point(40, 191);
+            this.user_answ_lb2.Name = "user_answ_lb2";
+            this.user_answ_lb2.Size = new System.Drawing.Size(54, 13);
+            this.user_answ_lb2.TabIndex = 166;
+            this.user_answ_lb2.Text = ":TEST #2";
+            this.user_answ_lb2.Visible = false;
+            // 
+            // user_answ_lb13
+            // 
+            this.user_answ_lb13.AutoSize = true;
+            this.user_answ_lb13.Enabled = false;
+            this.user_answ_lb13.Location = new System.Drawing.Point(135, 318);
+            this.user_answ_lb13.Name = "user_answ_lb13";
+            this.user_answ_lb13.Size = new System.Drawing.Size(60, 13);
+            this.user_answ_lb13.TabIndex = 188;
+            this.user_answ_lb13.Text = ":TEST #13";
+            this.user_answ_lb13.Visible = false;
+            // 
+            // user_answ_box2
+            // 
+            this.user_answ_box2.Enabled = false;
+            this.user_answ_box2.Location = new System.Drawing.Point(4, 188);
+            this.user_answ_box2.Name = "user_answ_box2";
+            this.user_answ_box2.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box2.TabIndex = 167;
+            this.user_answ_box2.Visible = false;
+            // 
+            // user_answ_box12
+            // 
+            this.user_answ_box12.Enabled = false;
+            this.user_answ_box12.Location = new System.Drawing.Point(4, 293);
+            this.user_answ_box12.Name = "user_answ_box12";
+            this.user_answ_box12.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box12.TabIndex = 187;
+            this.user_answ_box12.Visible = false;
+            // 
+            // user_answ_lb3
+            // 
+            this.user_answ_lb3.AutoSize = true;
+            this.user_answ_lb3.Enabled = false;
+            this.user_answ_lb3.Location = new System.Drawing.Point(135, 214);
+            this.user_answ_lb3.Name = "user_answ_lb3";
+            this.user_answ_lb3.Size = new System.Drawing.Size(54, 13);
+            this.user_answ_lb3.TabIndex = 168;
+            this.user_answ_lb3.Text = ":TEST #3";
+            this.user_answ_lb3.Visible = false;
+            // 
+            // user_answ_lb12
+            // 
+            this.user_answ_lb12.AutoSize = true;
+            this.user_answ_lb12.Enabled = false;
+            this.user_answ_lb12.Location = new System.Drawing.Point(39, 296);
+            this.user_answ_lb12.Name = "user_answ_lb12";
+            this.user_answ_lb12.Size = new System.Drawing.Size(60, 13);
+            this.user_answ_lb12.TabIndex = 186;
+            this.user_answ_lb12.Text = ":TEST #12";
+            this.user_answ_lb12.Visible = false;
+            // 
+            // user_answ_box3
+            // 
+            this.user_answ_box3.Enabled = false;
+            this.user_answ_box3.Location = new System.Drawing.Point(100, 209);
+            this.user_answ_box3.Name = "user_answ_box3";
+            this.user_answ_box3.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box3.TabIndex = 169;
+            this.user_answ_box3.Visible = false;
+            // 
+            // user_answ_box11
+            // 
+            this.user_answ_box11.Enabled = false;
+            this.user_answ_box11.Location = new System.Drawing.Point(100, 293);
+            this.user_answ_box11.Name = "user_answ_box11";
+            this.user_answ_box11.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box11.TabIndex = 185;
+            this.user_answ_box11.Visible = false;
+            // 
+            // user_answ_lb4
+            // 
+            this.user_answ_lb4.AutoSize = true;
+            this.user_answ_lb4.Enabled = false;
+            this.user_answ_lb4.Location = new System.Drawing.Point(40, 212);
+            this.user_answ_lb4.Name = "user_answ_lb4";
+            this.user_answ_lb4.Size = new System.Drawing.Size(54, 13);
+            this.user_answ_lb4.TabIndex = 170;
+            this.user_answ_lb4.Text = ":TEST #4";
+            this.user_answ_lb4.Visible = false;
+            // 
+            // user_answ_lb11
+            // 
+            this.user_answ_lb11.AutoSize = true;
+            this.user_answ_lb11.Enabled = false;
+            this.user_answ_lb11.Location = new System.Drawing.Point(135, 296);
+            this.user_answ_lb11.Name = "user_answ_lb11";
+            this.user_answ_lb11.Size = new System.Drawing.Size(60, 13);
+            this.user_answ_lb11.TabIndex = 184;
+            this.user_answ_lb11.Text = ":TEST #11";
+            this.user_answ_lb11.Visible = false;
+            // 
+            // user_answ_box4
+            // 
+            this.user_answ_box4.Enabled = false;
+            this.user_answ_box4.Location = new System.Drawing.Point(4, 209);
+            this.user_answ_box4.Name = "user_answ_box4";
+            this.user_answ_box4.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box4.TabIndex = 171;
+            this.user_answ_box4.Visible = false;
+            // 
+            // user_answ_box10
+            // 
+            this.user_answ_box10.Enabled = false;
+            this.user_answ_box10.Location = new System.Drawing.Point(4, 272);
+            this.user_answ_box10.Name = "user_answ_box10";
+            this.user_answ_box10.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box10.TabIndex = 183;
+            this.user_answ_box10.Visible = false;
+            // 
+            // user_answ_lb5
+            // 
+            this.user_answ_lb5.AutoSize = true;
+            this.user_answ_lb5.Enabled = false;
+            this.user_answ_lb5.Location = new System.Drawing.Point(135, 233);
+            this.user_answ_lb5.Name = "user_answ_lb5";
+            this.user_answ_lb5.Size = new System.Drawing.Size(54, 13);
+            this.user_answ_lb5.TabIndex = 172;
+            this.user_answ_lb5.Text = ":TEST #5";
+            this.user_answ_lb5.Visible = false;
+            // 
+            // user_answ_lb10
+            // 
+            this.user_answ_lb10.AutoSize = true;
+            this.user_answ_lb10.Enabled = false;
+            this.user_answ_lb10.Location = new System.Drawing.Point(40, 275);
+            this.user_answ_lb10.Name = "user_answ_lb10";
+            this.user_answ_lb10.Size = new System.Drawing.Size(60, 13);
+            this.user_answ_lb10.TabIndex = 182;
+            this.user_answ_lb10.Text = ":TEST #10";
+            this.user_answ_lb10.Visible = false;
+            // 
+            // user_answ_box5
+            // 
+            this.user_answ_box5.Enabled = false;
+            this.user_answ_box5.Location = new System.Drawing.Point(100, 230);
+            this.user_answ_box5.Name = "user_answ_box5";
+            this.user_answ_box5.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box5.TabIndex = 173;
+            this.user_answ_box5.Visible = false;
+            // 
+            // user_answ_box9
+            // 
+            this.user_answ_box9.Enabled = false;
+            this.user_answ_box9.Location = new System.Drawing.Point(100, 272);
+            this.user_answ_box9.Name = "user_answ_box9";
+            this.user_answ_box9.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box9.TabIndex = 181;
+            this.user_answ_box9.Visible = false;
+            // 
+            // user_answ_lb6
+            // 
+            this.user_answ_lb6.AutoSize = true;
+            this.user_answ_lb6.Enabled = false;
+            this.user_answ_lb6.Location = new System.Drawing.Point(39, 233);
+            this.user_answ_lb6.Name = "user_answ_lb6";
+            this.user_answ_lb6.Size = new System.Drawing.Size(54, 13);
+            this.user_answ_lb6.TabIndex = 174;
+            this.user_answ_lb6.Text = ":TEST #6";
+            this.user_answ_lb6.Visible = false;
+            // 
+            // user_answ_lb9
+            // 
+            this.user_answ_lb9.AutoSize = true;
+            this.user_answ_lb9.Enabled = false;
+            this.user_answ_lb9.Location = new System.Drawing.Point(135, 275);
+            this.user_answ_lb9.Name = "user_answ_lb9";
+            this.user_answ_lb9.Size = new System.Drawing.Size(54, 13);
+            this.user_answ_lb9.TabIndex = 180;
+            this.user_answ_lb9.Text = ":TEST #9";
+            this.user_answ_lb9.Visible = false;
+            // 
+            // user_answ_box6
+            // 
+            this.user_answ_box6.Enabled = false;
+            this.user_answ_box6.Location = new System.Drawing.Point(4, 230);
+            this.user_answ_box6.Name = "user_answ_box6";
+            this.user_answ_box6.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box6.TabIndex = 175;
+            this.user_answ_box6.Visible = false;
+            // 
+            // user_answ_box8
+            // 
+            this.user_answ_box8.Enabled = false;
+            this.user_answ_box8.Location = new System.Drawing.Point(4, 251);
+            this.user_answ_box8.Name = "user_answ_box8";
+            this.user_answ_box8.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box8.TabIndex = 179;
+            this.user_answ_box8.Visible = false;
+            // 
+            // user_answ_lb7
+            // 
+            this.user_answ_lb7.AutoSize = true;
+            this.user_answ_lb7.Enabled = false;
+            this.user_answ_lb7.Location = new System.Drawing.Point(135, 254);
+            this.user_answ_lb7.Name = "user_answ_lb7";
+            this.user_answ_lb7.Size = new System.Drawing.Size(54, 13);
+            this.user_answ_lb7.TabIndex = 176;
+            this.user_answ_lb7.Text = ":TEST #7";
+            this.user_answ_lb7.Visible = false;
+            // 
+            // user_answ_lb8
+            // 
+            this.user_answ_lb8.AutoSize = true;
+            this.user_answ_lb8.Enabled = false;
+            this.user_answ_lb8.Location = new System.Drawing.Point(40, 254);
+            this.user_answ_lb8.Name = "user_answ_lb8";
+            this.user_answ_lb8.Size = new System.Drawing.Size(54, 13);
+            this.user_answ_lb8.TabIndex = 178;
+            this.user_answ_lb8.Text = ":TEST #8";
+            this.user_answ_lb8.Visible = false;
+            // 
+            // user_answ_box7
+            // 
+            this.user_answ_box7.Enabled = false;
+            this.user_answ_box7.Location = new System.Drawing.Point(100, 251);
+            this.user_answ_box7.Name = "user_answ_box7";
+            this.user_answ_box7.Size = new System.Drawing.Size(36, 20);
+            this.user_answ_box7.TabIndex = 177;
+            this.user_answ_box7.Visible = false;
+            // 
             // edit_qus_user_tab
             // 
             this.edit_qus_user_tab.Controls.Add(this.uesr_tab);
@@ -704,7 +1701,7 @@
             this.edit_qus_user_tab.Location = new System.Drawing.Point(12, 55);
             this.edit_qus_user_tab.Name = "edit_qus_user_tab";
             this.edit_qus_user_tab.SelectedIndex = 0;
-            this.edit_qus_user_tab.Size = new System.Drawing.Size(200, 359);
+            this.edit_qus_user_tab.Size = new System.Drawing.Size(200, 484);
             this.edit_qus_user_tab.TabIndex = 35;
             // 
             // timer_get_test_user
@@ -1371,45 +2368,6 @@
             0});
             this.numericUpDown1.Visible = false;
             // 
-            // test_num_22_user_lb
-            // 
-            this.test_num_22_user_lb.AutoSize = true;
-            this.test_num_22_user_lb.Location = new System.Drawing.Point(130, 65);
-            this.test_num_22_user_lb.Name = "test_num_22_user_lb";
-            this.test_num_22_user_lb.Size = new System.Drawing.Size(39, 13);
-            this.test_num_22_user_lb.TabIndex = 12;
-            this.test_num_22_user_lb.Text = ":شماره";
-            // 
-            // test_num_22_user_combo
-            // 
-            this.test_num_22_user_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.test_num_22_user_combo.FormattingEnabled = true;
-            this.test_num_22_user_combo.Location = new System.Drawing.Point(6, 62);
-            this.test_num_22_user_combo.Name = "test_num_22_user_combo";
-            this.test_num_22_user_combo.Size = new System.Drawing.Size(121, 21);
-            this.test_num_22_user_combo.TabIndex = 13;
-            this.test_num_22_user_combo.SelectedIndexChanged += new System.EventHandler(this.test_num_22_user_combo_SelectedIndexChanged);
-            // 
-            // test_num_22_test_combo
-            // 
-            this.test_num_22_test_combo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.test_num_22_test_combo.FormattingEnabled = true;
-            this.test_num_22_test_combo.Location = new System.Drawing.Point(6, 58);
-            this.test_num_22_test_combo.Name = "test_num_22_test_combo";
-            this.test_num_22_test_combo.Size = new System.Drawing.Size(121, 21);
-            this.test_num_22_test_combo.TabIndex = 47;
-            this.test_num_22_test_combo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // test_num_22_test_lb
-            // 
-            this.test_num_22_test_lb.AutoSize = true;
-            this.test_num_22_test_lb.Location = new System.Drawing.Point(130, 61);
-            this.test_num_22_test_lb.Name = "test_num_22_test_lb";
-            this.test_num_22_test_lb.Size = new System.Drawing.Size(39, 13);
-            this.test_num_22_test_lb.TabIndex = 46;
-            this.test_num_22_test_lb.Text = ":شماره";
-            this.test_num_22_test_lb.Click += new System.EventHandler(this.label1_Click);
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
@@ -1418,7 +2376,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(983, 450);
+            this.ClientSize = new System.Drawing.Size(983, 551);
             this.ControlBox = false;
             this.Controls.Add(this.numericUpDown1);
             this.Controls.Add(this.test_text_box);
@@ -1655,5 +2613,85 @@
         private System.Windows.Forms.ComboBox test_num_22_user_combo;
         private System.Windows.Forms.Label test_num_22_user_lb;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.TextBox user_answ_box20;
+        private System.Windows.Forms.Label user_answ_lb20;
+        private System.Windows.Forms.TextBox user_answ_box19;
+        private System.Windows.Forms.Label user_answ_lb19;
+        private System.Windows.Forms.TextBox user_answ_box18;
+        private System.Windows.Forms.Label user_answ_lb18;
+        private System.Windows.Forms.TextBox user_answ_box17;
+        private System.Windows.Forms.Label user_answ_lb17;
+        private System.Windows.Forms.TextBox user_answ_box16;
+        private System.Windows.Forms.Label user_answ_lb16;
+        private System.Windows.Forms.TextBox user_answ_box15;
+        private System.Windows.Forms.Label user_answ_lb15;
+        private System.Windows.Forms.TextBox user_answ_box14;
+        private System.Windows.Forms.Label user_answ_lb1;
+        private System.Windows.Forms.Label user_answ_lb14;
+        private System.Windows.Forms.TextBox user_answ_box1;
+        private System.Windows.Forms.TextBox user_answ_box13;
+        private System.Windows.Forms.Label user_answ_lb2;
+        private System.Windows.Forms.Label user_answ_lb13;
+        private System.Windows.Forms.TextBox user_answ_box2;
+        private System.Windows.Forms.TextBox user_answ_box12;
+        private System.Windows.Forms.Label user_answ_lb3;
+        private System.Windows.Forms.Label user_answ_lb12;
+        private System.Windows.Forms.TextBox user_answ_box3;
+        private System.Windows.Forms.TextBox user_answ_box11;
+        private System.Windows.Forms.Label user_answ_lb4;
+        private System.Windows.Forms.Label user_answ_lb11;
+        private System.Windows.Forms.TextBox user_answ_box4;
+        private System.Windows.Forms.TextBox user_answ_box10;
+        private System.Windows.Forms.Label user_answ_lb5;
+        private System.Windows.Forms.Label user_answ_lb10;
+        private System.Windows.Forms.TextBox user_answ_box5;
+        private System.Windows.Forms.TextBox user_answ_box9;
+        private System.Windows.Forms.Label user_answ_lb6;
+        private System.Windows.Forms.Label user_answ_lb9;
+        private System.Windows.Forms.TextBox user_answ_box6;
+        private System.Windows.Forms.TextBox user_answ_box8;
+        private System.Windows.Forms.Label user_answ_lb7;
+        private System.Windows.Forms.Label user_answ_lb8;
+        private System.Windows.Forms.TextBox user_answ_box7;
+        private System.Windows.Forms.TextBox test_answ_box20;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.TextBox test_answ_box19;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox test_answ_box18;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.TextBox test_answ_box17;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.TextBox test_answ_box16;
+        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.TextBox test_answ_box15;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox test_answ_box14;
+        private System.Windows.Forms.Label label27;
+        private System.Windows.Forms.Label label28;
+        private System.Windows.Forms.TextBox test_answ_box1;
+        private System.Windows.Forms.TextBox test_answ_box13;
+        private System.Windows.Forms.Label label29;
+        private System.Windows.Forms.Label label30;
+        private System.Windows.Forms.TextBox test_answ_box2;
+        private System.Windows.Forms.TextBox test_answ_box12;
+        private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.TextBox test_answ_box3;
+        private System.Windows.Forms.TextBox test_answ_box11;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.TextBox test_answ_box4;
+        private System.Windows.Forms.TextBox test_answ_box10;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.TextBox test_answ_box5;
+        private System.Windows.Forms.TextBox test_answ_box9;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label38;
+        private System.Windows.Forms.TextBox test_answ_box6;
+        private System.Windows.Forms.TextBox test_answ_box8;
+        private System.Windows.Forms.Label label39;
+        private System.Windows.Forms.Label label40;
+        private System.Windows.Forms.TextBox test_answ_box7;
     }
 }

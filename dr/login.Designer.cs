@@ -707,7 +707,6 @@
             this.answ_textbox.Name = "answ_textbox";
             this.answ_textbox.Size = new System.Drawing.Size(384, 45);
             this.answ_textbox.TabIndex = 63;
-            this.answ_textbox.Visible = false;
             // 
             // label1
             // 

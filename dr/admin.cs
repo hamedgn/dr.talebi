@@ -133,6 +133,144 @@ namespace dr
             user_answ_test_box.Text = "";
             user_answ_test_box.Enabled = false;
             save_edit_test_btn.Enabled = false;
+            numericUpDown1.Value = 1;
+            test1_box.Text = "";
+            test1_box.Enabled = false;
+            test1_lb.Enabled = false;
+            f2_btn.Enabled = false;
+            f2_btn.Visible = true;
+            test2_box.Text = "";
+            test2_box.Enabled = false;
+            test2_box.Visible = false;
+            test2_lb.Visible = false;
+            test2_lb.Enabled = false;
+            f3_btn.Enabled = false;
+            f3_btn.Visible = false;
+            test3_box.Text = "";
+            test3_box.Enabled = false;
+            test3_box.Visible = false;
+            test3_lb.Visible = false;
+            test3_lb.Enabled = false;
+            f4_btn.Enabled = false;
+            f4_btn.Visible = false;
+            test4_box.Text = "";
+            test4_box.Enabled = false;
+            test4_box.Visible = false;
+            test4_lb.Visible = false;
+            test4_lb.Enabled = false;
+            f5_btn.Enabled = false;
+            f5_btn.Visible = false;
+            test5_box.Text = "";
+            test5_box.Enabled = false;
+            test5_box.Visible = false;
+            test5_lb.Visible = false;
+            test5_lb.Enabled = false;
+            f6_btn.Enabled = false;
+            f6_btn.Visible = false;
+            test6_box.Text = "";
+            test6_box.Enabled = false;
+            test6_box.Visible = false;
+            test6_lb.Visible = false;
+            test6_lb.Enabled = false;
+            f7_btn.Enabled = false;
+            f7_btn.Visible = false;
+            test7_box.Text = "";
+            test7_box.Enabled = false;
+            test7_box.Visible = false;
+            test7_lb.Visible = false;
+            test7_lb.Enabled = false;
+            f8_btn.Enabled = false;
+            f8_btn.Visible = false;
+            test8_box.Text = "";
+            test8_box.Enabled = false;
+            test8_box.Visible = false;
+            test8_lb.Visible = false;
+            test8_lb.Enabled = false;
+            f9_btn.Enabled = false;
+            f9_btn.Visible = false;
+            test9_box.Text = "";
+            test9_box.Enabled = false;
+            test9_box.Visible = false;
+            test9_lb.Visible = false;
+            test9_lb.Enabled = false;
+            f10_btn.Enabled = false;
+            f10_btn.Visible = false;
+            test10_box.Text = "";
+            test10_box.Enabled = false;
+            test10_box.Visible = false;
+            test10_lb.Visible = false;
+            test10_lb.Enabled = false;
+            f11_btn.Enabled = false;
+            f11_btn.Visible = false;
+            test11_box.Text = "";
+            test11_box.Enabled = false;
+            test11_box.Visible = false;
+            test11_lb.Visible = false;
+            test11_lb.Enabled = false;
+            f12_btn.Enabled = false;
+            f12_btn.Visible = false;
+            test12_box.Text = "";
+            test12_box.Enabled = false;
+            test12_box.Visible = false;
+            test12_lb.Visible = false;
+            test12_lb.Enabled = false;
+            f13_btn.Enabled = false;
+            f13_btn.Visible = false;
+            test13_box.Text = "";
+            test13_box.Enabled = false;
+            test13_box.Visible = false;
+            test13_lb.Visible = false;
+            test13_lb.Enabled = false;
+            f14_btn.Enabled = false;
+            f14_btn.Visible = false;
+            test14_box.Text = "";
+            test14_box.Enabled = false;
+            test14_box.Visible = false;
+            test14_lb.Visible = false;
+            test14_lb.Enabled = false;
+            f15_btn.Enabled = false;
+            f15_btn.Visible = false;
+            test15_box.Text = "";
+            test15_box.Enabled = false;
+            test15_box.Visible = false;
+            test15_lb.Visible = false;
+            test15_lb.Enabled = false;
+            f16_btn.Enabled = false;
+            f16_btn.Visible = false;
+            test16_box.Text = "";
+            test16_box.Enabled = false;
+            test16_box.Visible = false;
+            test16_lb.Visible = false;
+            test16_lb.Enabled = false;
+            f17_btn.Enabled = false;
+            f17_btn.Visible = false;
+            test17_box.Text = "";
+            test17_box.Enabled = false;
+            test17_box.Visible = false;
+            test17_lb.Visible = false;
+            test17_lb.Enabled = false;
+            f18_btn.Enabled = false;
+            f18_btn.Visible = false;
+            test18_box.Text = "";
+            test18_box.Enabled = false;
+            test18_box.Visible = false;
+            test18_lb.Visible = false;
+            test18_lb.Enabled = false;
+            f19_btn.Enabled = false;
+            f19_btn.Visible = false;
+            test19_box.Text = "";
+            test19_box.Enabled = false;
+            test19_box.Visible = false;
+            test19_lb.Visible = false;
+            test19_lb.Enabled = false;
+            f20_btn.Enabled = false;
+            f20_btn.Visible = false;
+            test20_box.Text = "";
+            test20_box.Enabled = false;
+            test20_box.Visible = false;
+            test20_lb.Visible = false;
+            test20_lb.Enabled = false;
+            
         }
 
         private void save_user_create_btn_Click(object sender, EventArgs e)
@@ -235,9 +373,11 @@ namespace dr
             test_name_box.Enabled = true;
             
             test_text_box.Enabled = true;
-            
-           // test_machine_combo.Enabled = true;
-            
+
+            // test_machine_combo.Enabled = true;
+            test1_lb.Enabled = true;
+            test1_box.Enabled = true;
+            f2_btn.Enabled = true;
             save_test_btn.Enabled = true;
 
             DBC.count_machine();
@@ -257,7 +397,9 @@ namespace dr
             if (DBC.message == "")
             {
                 DBC.id_machin(test_machine_combo.SelectedItem.ToString());
-                DBC.insert_test(test_name_box.Text, Convert.ToInt32(DBC.message), test_text_box.Text);
+                DBC.insert_test(test_name_box.Text, Convert.ToInt32(DBC.message), test_text_box.Text,Convert.ToInt32( numericUpDown1.Value), test1_box.Text, test2_box.Text,
+                    test3_box.Text, test4_box.Text, test5_box.Text, test6_box.Text, test7_box.Text, test8_box.Text, test9_box.Text, test10_box.Text, test11_box.Text, test12_box.Text,
+                    test13_box.Text, test14_box.Text, test15_box.Text, test16_box.Text, test17_box.Text, test18_box.Text, test19_box.Text, test20_box.Text);
                 MessageBox.Show(DBC.message);
                 deisable_all();
             }
@@ -429,7 +571,18 @@ namespace dr
             test_time_user_datepicker.Enabled = true;
             user_answ_user_box.Enabled = true;
             save_edit_user_btn.Enabled = true;
-            
+
+
+
+
+            int j = test_num_user_combo.Items.Count;
+            for (int i = 0; i < j; i++)
+            {
+                test_num_user_combo.Items.RemoveAt(0);
+            }
+
+            timer_get_test_user.Enabled = true;
+
         }
 
         private void save_edit_user_btn_Click(object sender, EventArgs e)
@@ -493,6 +646,433 @@ namespace dr
         private void exit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void f2_btn_Click(object sender, EventArgs e)
+        {
+            f2_btn.Enabled = false;
+            f2_btn.Visible = false;
+            test2_lb.Visible = true;
+            test2_lb.Enabled = true;
+            test2_box.Visible = true;
+            test2_box.Enabled = true;
+            f3_btn.Visible = true;
+            f3_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f3_btn_Click(object sender, EventArgs e)
+        {
+            f3_btn.Enabled = false;
+            f3_btn.Visible = false;
+            test3_lb.Visible = true;
+            test3_lb.Enabled = true;
+            test3_box.Visible = true;
+            test3_box.Enabled = true;
+            f4_btn.Visible = true;
+            f4_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f4_btn_Click(object sender, EventArgs e)
+        {
+            f4_btn.Enabled = false;
+            f4_btn.Visible = false;
+            test4_lb.Visible = true;
+            test4_lb.Enabled = true;
+            test4_box.Visible = true;
+            test4_box.Enabled = true;
+            f5_btn.Visible = true;
+            f5_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f5_btn_Click(object sender, EventArgs e)
+        {
+            f5_btn.Enabled = false;
+            f5_btn.Visible = false;
+            test5_lb.Visible = true;
+            test5_lb.Enabled = true;
+            test5_box.Visible = true;
+            test5_box.Enabled = true;
+            f6_btn.Visible = true;
+            f6_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f6_btn_Click(object sender, EventArgs e)
+        {
+            f6_btn.Enabled = false;
+            f6_btn.Visible = false;
+            test6_lb.Visible = true;
+            test6_lb.Enabled = true;
+            test6_box.Visible = true;
+            test6_box.Enabled = true;
+            f7_btn.Visible = true;
+            f7_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f7_btn_Click(object sender, EventArgs e)
+        {
+            f7_btn.Enabled = false;
+            f7_btn.Visible = false;
+            test7_lb.Visible = true;
+            test7_lb.Enabled = true;
+            test7_box.Visible = true;
+            test7_box.Enabled = true;
+            f8_btn.Visible = true;
+            f8_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f8_btn_Click(object sender, EventArgs e)
+        {
+            f8_btn.Enabled = false;
+            f8_btn.Visible = false;
+            test8_lb.Visible = true;
+            test8_lb.Enabled = true;
+            test8_box.Visible = true;
+            test8_box.Enabled = true;
+            f9_btn.Visible = true;
+            f9_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f9_btn_Click(object sender, EventArgs e)
+        {
+            f9_btn.Enabled = false;
+            f9_btn.Visible = false;
+            test9_lb.Visible = true;
+            test9_lb.Enabled = true;
+            test9_box.Visible = true;
+            test9_box.Enabled = true;
+            f10_btn.Visible = true;
+            f10_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f10_btn_Click(object sender, EventArgs e)
+        {
+            f10_btn.Enabled = false;
+            f10_btn.Visible = false;
+            test10_lb.Visible = true;
+            test10_lb.Enabled = true;
+            test10_box.Visible = true;
+            test10_box.Enabled = true;
+            f11_btn.Visible = true;
+            f11_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f11_btn_Click(object sender, EventArgs e)
+        {
+            f11_btn.Enabled = false;
+            f11_btn.Visible = false;
+            test11_lb.Visible = true;
+            test11_lb.Enabled = true;
+            test11_box.Visible = true;
+            test11_box.Enabled = true;
+            f12_btn.Visible = true;
+            f12_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f12_btn_Click(object sender, EventArgs e)
+        {
+            f12_btn.Enabled = false;
+            f12_btn.Visible = false;
+            test12_lb.Visible = true;
+            test12_lb.Enabled = true;
+            test12_box.Visible = true;
+            test12_box.Enabled = true;
+            f13_btn.Visible = true;
+            f13_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f13_btn_Click(object sender, EventArgs e)
+        {
+            f13_btn.Enabled = false;
+            f13_btn.Visible = false;
+            test13_lb.Visible = true;
+            test13_lb.Enabled = true;
+            test13_box.Visible = true;
+            test13_box.Enabled = true;
+            f14_btn.Visible = true;
+            f14_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f14_btn_Click(object sender, EventArgs e)
+        {
+            f14_btn.Enabled = false;
+            f14_btn.Visible = false;
+            test14_lb.Visible = true;
+            test14_lb.Enabled = true;
+            test14_box.Visible = true;
+            test14_box.Enabled = true;
+            f15_btn.Visible = true;
+            f15_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f15_btn_Click(object sender, EventArgs e)
+        {
+            f15_btn.Enabled = false;
+            f15_btn.Visible = false;
+            test15_lb.Visible = true;
+            test15_lb.Enabled = true;
+            test15_box.Visible = true;
+            test15_box.Enabled = true;
+            f16_btn.Visible = true;
+            f16_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f16_btn_Click(object sender, EventArgs e)
+        {
+            f16_btn.Enabled = false;
+            f16_btn.Visible = false;
+            test16_lb.Visible = true;
+            test16_lb.Enabled = true;
+            test16_box.Visible = true;
+            test16_box.Enabled = true;
+            f17_btn.Visible = true;
+            f17_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f17_btn_Click(object sender, EventArgs e)
+        {
+            f17_btn.Enabled = false;
+            f17_btn.Visible = false;
+            test17_lb.Visible = true;
+            test17_lb.Enabled = true;
+            test17_box.Visible = true;
+            test17_box.Enabled = true;
+            f18_btn.Visible = true;
+            f18_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f18_btn_Click(object sender, EventArgs e)
+        {
+            f18_btn.Enabled = false;
+            f18_btn.Visible = false;
+            test18_lb.Visible = true;
+            test18_lb.Enabled = true;
+            test18_box.Visible = true;
+            test18_box.Enabled = true;
+            f19_btn.Visible = true;
+            f19_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+        
+        private void f19_btn_Click(object sender, EventArgs e)
+        {
+            f19_btn.Enabled = false;
+            f19_btn.Visible = false;
+            test19_lb.Visible = true;
+            test19_lb.Enabled = true;
+            test19_box.Visible = true;
+            test19_box.Enabled = true;
+            f20_btn.Visible = true;
+            f20_btn.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+        private void f20_btn_Click(object sender, EventArgs e)
+        {
+            f20_btn.Enabled = false;
+            f20_btn.Visible = false;
+            test20_lb.Visible = true;
+            test20_lb.Enabled = true;
+            test20_box.Visible = true;
+            test20_box.Enabled = true;
+            numericUpDown1.Value = numericUpDown1.Value + 1;
+        }
+
+
+        private void textBox19_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test20_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox18_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test19_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox17_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test18_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox16_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test17_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox15_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test16_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox14_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test15_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox13_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test14_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox12_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test13_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox11_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test12_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox10_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test11_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox9_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test10_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox8_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test9_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test8_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox6_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test7_lb_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void test_num_22_user_combo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            DBC.id_test(test_num_user_combo.SelectedItem.ToString());
+            DBC.test_user_answr(Convert.ToInt32(DBC.message), Convert.ToInt32(pr_cod_user_combo.SelectedItem.ToString()));
+            test_time_user_datepicker.Text = DBC.date_answer.ToString();
+            user_answ_user_box.Text = DBC.answer;
+            test_num_user_combo.Enabled = false;
+            pr_cod_user_combo.Enabled = false;
+            test_time_user_datepicker.Enabled = true;
+            user_answ_user_box.Enabled = true;
+            save_edit_user_btn.Enabled = true;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer_get_test_user.Enabled = false;
+            //DBC.id_user(pr_cod_user_combo.Text);
+            DBC.sync_test_user(Convert.ToInt32(pr_cod_user_combo.SelectedItem.ToString()));
+            DBC.sync_test_user_name();
+
+
+            String[] test_list = File.ReadAllText("temp").ToString().Split('%');
+            for (int i = 0; i < Convert.ToInt32(test_list.Length.ToString()) - 1; i++)
+            {
+                test_num_22_user_combo.Items.Add(test_list[i]);
+            }
+
+            File.WriteAllText("temp", "");
+            test_num_22_user_combo.Enabled = true;
         }
     }
 }

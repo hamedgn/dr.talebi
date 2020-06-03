@@ -551,11 +551,31 @@ namespace dr
 
 
             String[] test_list = File.ReadAllText("temp").ToString().Split('%');
+            int j = 0;
+            int z = 0;
+            
+            
             for (int i = 0; i < Convert.ToInt32(test_list.Length.ToString()) - 1; i++)
             {
-                test_num_user_combo.Items.Add(test_list[i]);
+                for (int v = i ; v > 0  ; v--)
+                {
+                    if (test_list[i] == test_list[v-1])
+                    {
+                        z = 1;
+                       
+                    }
+                    else
+                    {
+                        z = 0;
+                    }
+                }
+                if (z == 0)
+                {
+                    test_num_user_combo.Items.Add(test_list[i]);
+                }
+                
             }
-
+            
             File.WriteAllText("temp", "");
             test_num_user_combo.Enabled = true;
         }
@@ -575,13 +595,13 @@ namespace dr
 
 
 
-            int j = test_num_user_combo.Items.Count;
+            int j = test_num_22_user_combo.Items.Count;
             for (int i = 0; i < j; i++)
             {
-                test_num_user_combo.Items.RemoveAt(0);
+                test_num_22_user_combo.Items.RemoveAt(0);
             }
 
-            timer_get_test_user.Enabled = true;
+            timer1.Enabled = true;
 
         }
 
@@ -1059,10 +1079,12 @@ namespace dr
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-            timer_get_test_user.Enabled = false;
+            timer1.Enabled = false;
             //DBC.id_user(pr_cod_user_combo.Text);
-            DBC.sync_test_user(Convert.ToInt32(pr_cod_user_combo.SelectedItem.ToString()));
-            DBC.sync_test_user_name();
+            DBC.message = "";
+            DBC.id_test(test_num_user_combo.SelectedItem.ToString());
+            DBC.sync_test_22_user(Convert.ToInt32( DBC.message),Convert.ToInt32( pr_cod_user_combo.SelectedItem.ToString()));
+            DBC.sync_test_22_user_name();
 
 
             String[] test_list = File.ReadAllText("temp").ToString().Split('%');

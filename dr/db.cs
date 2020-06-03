@@ -982,13 +982,13 @@ namespace dr
 
             if (this.OpenConnection() == true)
             {
-
+                
                 //create command and assign the query and connection from the constructor
                 MySqlCommand cmd = new MySqlCommand(query, connection);
                 MySqlDataReader myreader = cmd.ExecuteReader();
                 while (myreader.Read())
                 {
-
+                   
                     user_list.Add(Convert.ToInt32(myreader["user_id"].ToString()));
 
                 }
@@ -1021,6 +1021,51 @@ namespace dr
             }
         }
 
+        IList<int> testansw_list = new List<int>();
+        public void sync_test_22_user(int id_test, int id_user)
+        {
+            string query = "CALL `search_test`("+id_test+"," + id_user + ")";
+
+            if (this.OpenConnection() == true)
+            {
+
+                //create command and assign the query and connection from the constructor
+                MySqlCommand cmd = new MySqlCommand(query, connection);
+                MySqlDataReader myreader = cmd.ExecuteReader();
+                while (myreader.Read())
+                {
+
+                    testansw_list.Add(Convert.ToInt32(myreader["id"].ToString()));
+
+                }
+
+                //close connection
+                this.CloseConnection();
+
+
+            }
+
+        }
+
+        public void sync_test_22_user_name()
+        {
+            int j = testansw_list.Count;
+            for (int i = 0; i < j; i++)
+            {
+
+                //test_name(Convert.ToInt32(testansw_list[i].ToString()));
+                string temp = "";
+                temp = File.ReadAllText("temp");
+
+                File.WriteAllText("temp", temp + testansw_list[i].ToString() + "%");
+
+            }
+
+            for (int i = 0; i < j; i++)
+            {
+                testansw_list.RemoveAt(0);
+            }
+        }
 
     }
 

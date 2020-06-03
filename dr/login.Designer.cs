@@ -92,6 +92,7 @@
             this.test20_lb = new System.Windows.Forms.Label();
             this.answ_textbox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.exit_btn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // pr_cod_lb
@@ -270,7 +271,7 @@
             // save_exit_btn
             // 
             this.save_exit_btn.Enabled = false;
-            this.save_exit_btn.Location = new System.Drawing.Point(22, 480);
+            this.save_exit_btn.Location = new System.Drawing.Point(15, 455);
             this.save_exit_btn.Name = "save_exit_btn";
             this.save_exit_btn.Size = new System.Drawing.Size(118, 23);
             this.save_exit_btn.TabIndex = 22;
@@ -702,6 +703,7 @@
             // 
             // answ_textbox
             // 
+            this.answ_textbox.Enabled = false;
             this.answ_textbox.Location = new System.Drawing.Point(12, 404);
             this.answ_textbox.Multiline = true;
             this.answ_textbox.Name = "answ_textbox";
@@ -717,11 +719,22 @@
             this.label1.TabIndex = 64;
             this.label1.Text = ":توضیحات";
             // 
+            // exit_btn
+            // 
+            this.exit_btn.Location = new System.Drawing.Point(18, 484);
+            this.exit_btn.Name = "exit_btn";
+            this.exit_btn.Size = new System.Drawing.Size(75, 23);
+            this.exit_btn.TabIndex = 65;
+            this.exit_btn.Text = "خروج";
+            this.exit_btn.UseVisualStyleBackColor = true;
+            this.exit_btn.Click += new System.EventHandler(this.exit_btn_Click);
+            // 
             // login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(411, 510);
+            this.Controls.Add(this.exit_btn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.answ_textbox);
             this.Controls.Add(this.test20_box);
@@ -783,6 +796,7 @@
             this.Controls.Add(this.pr_cod_lb);
             this.Name = "login";
             this.Text = "ورود";
+            this.Load += new System.EventHandler(this.login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -853,6 +867,7 @@
         private System.Windows.Forms.Label test20_lb;
         private System.Windows.Forms.TextBox answ_textbox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button exit_btn;
     }
 }
 

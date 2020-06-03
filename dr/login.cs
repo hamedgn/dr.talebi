@@ -228,7 +228,8 @@ namespace dr
                 test20_lb.Text = DBC.f20;
 
                 choose_tests_combo.Enabled = false;
-                
+            answ_textbox.Enabled = true;
+            answ_textbox.Text = "";
                 save_qus_btn.Enabled = true;
                 change_machine_btn.Enabled = true;
                 save_exit_btn.Enabled = true;
@@ -758,6 +759,32 @@ namespace dr
 
                 test20_box.Text = test20_box.Text.Remove(test20_box.Text.Length - 1);
             }
+        }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+            //Initialize();
+            if (File.Exists("temp"))
+            {
+
+            }
+            else
+            {
+                File.Create("temp");
+            }
+            if (File.Exists("temp2"))
+            {
+
+            }
+            else
+            {
+                File.Create("temp2");
+            }
+        }
+
+        private void exit_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

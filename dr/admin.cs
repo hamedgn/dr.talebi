@@ -546,7 +546,7 @@ namespace dr
             edit_qus_user_tab.Enabled = true;
 
         }
-        private int count_test;
+       // private int count_test;
         private int count_user;
         private void uesr_tab_Click(object sender, EventArgs e)
         {

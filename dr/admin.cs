@@ -581,8 +581,13 @@ namespace dr
             pr_cod_user_combo.Enabled = true;
         }
 
+
+        //TODO: here copy from another tab
+
+
         private void qus_tab_Click(object sender, EventArgs e)
         {
+            /*
             int j = pr_cod_test_combo.Items.Count;
             for (int i = 0; i < j; i++)
             {
@@ -611,6 +616,7 @@ namespace dr
                 test_num_test_combo.Items.Add(DBC.tests_name);
             }
             test_num_test_combo.Enabled = true;
+            */
         }
 
         private void pr_cod_user_combo_SelectedIndexChanged(object sender, EventArgs e)
@@ -633,7 +639,7 @@ namespace dr
 
 
             String[] test_list = File.ReadAllText("temp").ToString().Split('%');
-            int j = 0;
+            
             int z = 0;
             
             
@@ -1240,14 +1246,184 @@ namespace dr
             test_num_22_user_combo.Enabled = true;
         }
 
-        private void textBox36_TextChanged(object sender, EventArgs e)
+        private void user_answ_box1_TextChanged(object sender, EventArgs e)
         {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box1.Text, "[^0-9&.]"))
+            {
 
+                user_answ_box1.Text = user_answ_box1.Text.Remove(user_answ_box1.Text.Length - 1);
+            }
         }
 
-        private void textBox39_TextChanged(object sender, EventArgs e)
+        private void user_answ_box2_TextChanged(object sender, EventArgs e)
         {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box2.Text, "[^0-9&.]"))
+            {
 
+                user_answ_box2.Text = user_answ_box2.Text.Remove(user_answ_box2.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box3_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box3.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box3.Text = user_answ_box3.Text.Remove(user_answ_box3.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box4_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box4.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box4.Text = user_answ_box4.Text.Remove(user_answ_box4.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box5_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box5.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box5.Text = user_answ_box5.Text.Remove(user_answ_box5.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box6_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box6.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box6.Text = user_answ_box6.Text.Remove(user_answ_box6.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box7_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box7.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box7.Text = user_answ_box7.Text.Remove(user_answ_box7.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box8_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box8.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box8.Text = user_answ_box8.Text.Remove(user_answ_box8.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box9_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box9.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box9.Text = user_answ_box9.Text.Remove(user_answ_box9.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box10_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box10.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box10.Text = user_answ_box10.Text.Remove(user_answ_box10.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box11_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box11.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box11.Text = user_answ_box11.Text.Remove(user_answ_box11.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box12_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box12.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box12.Text = user_answ_box12.Text.Remove(user_answ_box12.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box13_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box13.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box13.Text = user_answ_box13.Text.Remove(user_answ_box13.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box14_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box14.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box14.Text = user_answ_box14.Text.Remove(user_answ_box14.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box15_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box15.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box15.Text = user_answ_box15.Text.Remove(user_answ_box15.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box16_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box16.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box16.Text = user_answ_box16.Text.Remove(user_answ_box16.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box17_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box17.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box17.Text = user_answ_box17.Text.Remove(user_answ_box17.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box18_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box18.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box18.Text = user_answ_box18.Text.Remove(user_answ_box18.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box19_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box19.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box19.Text = user_answ_box19.Text.Remove(user_answ_box19.Text.Length - 1);
+            }
+        }
+
+        private void user_answ_box20_TextChanged(object sender, EventArgs e)
+        {
+            if (System.Text.RegularExpressions.Regex.IsMatch(user_answ_box20.Text, "[^0-9&.]"))
+            {
+
+                user_answ_box20.Text = user_answ_box20.Text.Remove(user_answ_box20.Text.Length - 1);
+            }
         }
     }
 }

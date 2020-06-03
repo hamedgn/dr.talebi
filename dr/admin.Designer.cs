@@ -940,7 +940,6 @@
             this.test_answ_box5.Size = new System.Drawing.Size(36, 20);
             this.test_answ_box5.TabIndex = 213;
             this.test_answ_box5.Visible = false;
-            this.test_answ_box5.TextChanged += new System.EventHandler(this.textBox36_TextChanged);
             // 
             // test_answ_box9
             // 
@@ -990,7 +989,6 @@
             this.test_answ_box8.Size = new System.Drawing.Size(36, 20);
             this.test_answ_box8.TabIndex = 219;
             this.test_answ_box8.Visible = false;
-            this.test_answ_box8.TextChanged += new System.EventHandler(this.textBox39_TextChanged);
             // 
             // label39
             // 
@@ -1031,7 +1029,6 @@
             this.test_num_22_test_combo.Name = "test_num_22_test_combo";
             this.test_num_22_test_combo.Size = new System.Drawing.Size(121, 21);
             this.test_num_22_test_combo.TabIndex = 47;
-            //this.test_num_22_test_combo.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // test_num_22_test_lb
             // 
@@ -1041,7 +1038,6 @@
             this.test_num_22_test_lb.Size = new System.Drawing.Size(39, 13);
             this.test_num_22_test_lb.TabIndex = 46;
             this.test_num_22_test_lb.Text = ":شماره";
-            //this.test_num_22_test_lb.Click += new System.EventHandler(this.label1_Click);
             // 
             // test_time_test_datepicker
             // 
@@ -1199,6 +1195,7 @@
             this.user_answ_box20.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box20.TabIndex = 203;
             this.user_answ_box20.Visible = false;
+            this.user_answ_box20.TextChanged += new System.EventHandler(this.user_answ_box20_TextChanged);
             // 
             // test_num_22_user_combo
             // 
@@ -1238,6 +1235,7 @@
             this.user_answ_box19.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box19.TabIndex = 201;
             this.user_answ_box19.Visible = false;
+            this.user_answ_box19.TextChanged += new System.EventHandler(this.user_answ_box19_TextChanged);
             // 
             // test_time_user_datepicker
             // 
@@ -1278,6 +1276,7 @@
             this.user_answ_box18.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box18.TabIndex = 199;
             this.user_answ_box18.Visible = false;
+            this.user_answ_box18.TextChanged += new System.EventHandler(this.user_answ_box18_TextChanged);
             // 
             // save_edit_user_btn
             // 
@@ -1317,6 +1316,7 @@
             this.user_answ_box17.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box17.TabIndex = 197;
             this.user_answ_box17.Visible = false;
+            this.user_answ_box17.TextChanged += new System.EventHandler(this.user_answ_box17_TextChanged);
             // 
             // user_answ_user_lb
             // 
@@ -1355,6 +1355,7 @@
             this.user_answ_box16.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box16.TabIndex = 195;
             this.user_answ_box16.Visible = false;
+            this.user_answ_box16.TextChanged += new System.EventHandler(this.user_answ_box16_TextChanged);
             // 
             // test_num_user_combo
             // 
@@ -1394,6 +1395,7 @@
             this.user_answ_box15.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box15.TabIndex = 193;
             this.user_answ_box15.Visible = false;
+            this.user_answ_box15.TextChanged += new System.EventHandler(this.user_answ_box15_TextChanged);
             // 
             // user_answ_lb15
             // 
@@ -1423,6 +1425,7 @@
             this.user_answ_box14.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box14.TabIndex = 191;
             this.user_answ_box14.Visible = false;
+            this.user_answ_box14.TextChanged += new System.EventHandler(this.user_answ_box14_TextChanged);
             // 
             // user_answ_lb1
             // 
@@ -1452,6 +1455,7 @@
             this.user_answ_box1.Name = "user_answ_box1";
             this.user_answ_box1.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box1.TabIndex = 165;
+            this.user_answ_box1.TextChanged += new System.EventHandler(this.user_answ_box1_TextChanged);
             // 
             // user_answ_box13
             // 
@@ -1461,6 +1465,7 @@
             this.user_answ_box13.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box13.TabIndex = 189;
             this.user_answ_box13.Visible = false;
+            this.user_answ_box13.TextChanged += new System.EventHandler(this.user_answ_box13_TextChanged);
             // 
             // user_answ_lb2
             // 
@@ -1492,6 +1497,7 @@
             this.user_answ_box2.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box2.TabIndex = 167;
             this.user_answ_box2.Visible = false;
+            this.user_answ_box2.TextChanged += new System.EventHandler(this.user_answ_box2_TextChanged);
             // 
             // user_answ_box12
             // 
@@ -1501,6 +1507,7 @@
             this.user_answ_box12.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box12.TabIndex = 187;
             this.user_answ_box12.Visible = false;
+            this.user_answ_box12.TextChanged += new System.EventHandler(this.user_answ_box12_TextChanged);
             // 
             // user_answ_lb3
             // 
@@ -1532,6 +1539,7 @@
             this.user_answ_box3.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box3.TabIndex = 169;
             this.user_answ_box3.Visible = false;
+            this.user_answ_box3.TextChanged += new System.EventHandler(this.user_answ_box3_TextChanged);
             // 
             // user_answ_box11
             // 
@@ -1541,6 +1549,7 @@
             this.user_answ_box11.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box11.TabIndex = 185;
             this.user_answ_box11.Visible = false;
+            this.user_answ_box11.TextChanged += new System.EventHandler(this.user_answ_box11_TextChanged);
             // 
             // user_answ_lb4
             // 
@@ -1572,6 +1581,7 @@
             this.user_answ_box4.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box4.TabIndex = 171;
             this.user_answ_box4.Visible = false;
+            this.user_answ_box4.TextChanged += new System.EventHandler(this.user_answ_box4_TextChanged);
             // 
             // user_answ_box10
             // 
@@ -1581,6 +1591,7 @@
             this.user_answ_box10.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box10.TabIndex = 183;
             this.user_answ_box10.Visible = false;
+            this.user_answ_box10.TextChanged += new System.EventHandler(this.user_answ_box10_TextChanged);
             // 
             // user_answ_lb5
             // 
@@ -1612,6 +1623,7 @@
             this.user_answ_box5.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box5.TabIndex = 173;
             this.user_answ_box5.Visible = false;
+            this.user_answ_box5.TextChanged += new System.EventHandler(this.user_answ_box5_TextChanged);
             // 
             // user_answ_box9
             // 
@@ -1621,6 +1633,7 @@
             this.user_answ_box9.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box9.TabIndex = 181;
             this.user_answ_box9.Visible = false;
+            this.user_answ_box9.TextChanged += new System.EventHandler(this.user_answ_box9_TextChanged);
             // 
             // user_answ_lb6
             // 
@@ -1652,6 +1665,7 @@
             this.user_answ_box6.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box6.TabIndex = 175;
             this.user_answ_box6.Visible = false;
+            this.user_answ_box6.TextChanged += new System.EventHandler(this.user_answ_box6_TextChanged);
             // 
             // user_answ_box8
             // 
@@ -1661,6 +1675,7 @@
             this.user_answ_box8.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box8.TabIndex = 179;
             this.user_answ_box8.Visible = false;
+            this.user_answ_box8.TextChanged += new System.EventHandler(this.user_answ_box8_TextChanged);
             // 
             // user_answ_lb7
             // 
@@ -1692,6 +1707,7 @@
             this.user_answ_box7.Size = new System.Drawing.Size(36, 20);
             this.user_answ_box7.TabIndex = 177;
             this.user_answ_box7.Visible = false;
+            this.user_answ_box7.TextChanged += new System.EventHandler(this.user_answ_box7_TextChanged);
             // 
             // edit_qus_user_tab
             // 
